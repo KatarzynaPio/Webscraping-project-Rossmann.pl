@@ -77,9 +77,15 @@ def getInfoAboutProduct(dProduct):
     as one of its values a link to the product page.
     '''
     soup = getdata(dProduct['link']) # Download the page for the product 
+    Product['Name'] = soup.find('div',class_ = 'product-info__name').h1.text
+    Product['image'] = soup.find('div',class_ = 'product-img').img['src']
+    Product['shortDescription'] = soup.find('div',class_ = 'product-info__name').h2.text
+    Product['longDescription'] = soup.find('div',class_ = 'product__desctiption').find(class_ = 'accordion').div.text
     Product['regularPrice'] = dProduct['regularPrice'][0]
     Product['promoPrice'] = dProduct['promoPrice'] 
-    # scrape additional producAllproducts
+
+    # scrape additional info about product
+    
     # If you can't find the word "NOT AVAILABLE ONLINE" on the page, 
     # it means that the product is available to order online, otherwise it is not available.
     if  soup.find_all(text='NIEDOSTĘPNY ONLINE'):  
@@ -125,7 +131,7 @@ st = time.time()
 fileName = "200Products.csv"
 directory = os.getcwd()
 
-numberOfProductsMax = 200 # # the maximum number of products for which the program should scrape data
+numberOfProductsMax = 100 # # the maximum number of products for which the program should scrape data
 mainUrl = 'https://www.rossmann.pl'
 bs = getdata(mainUrl)
 
