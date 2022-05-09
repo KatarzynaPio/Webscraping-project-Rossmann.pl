@@ -45,12 +45,6 @@ def getdata(url):
         soup = BS(html.read(), 'html.parser')
         return soup
 
-def safe_str(obj):
-    try: return str(obj)
-    except UnicodeEncodeError:
-        return obj.encode('ascii', 'ignore').decode('ascii')
-    return ""
-
 
 def loadLinksToProductFromPage(bs):
     '''
@@ -66,7 +60,7 @@ def loadLinksToProductFromPage(bs):
     for bsProduct in bsProducts:
         try:
             dProduct = {
-                'link':mainUrl + safe_str(bsProduct.find('a',class_ = 'tile-product__name')['href']),
+                'link':mainUrl + str(bsProduct.find('a',class_ = 'tile-product__name')['href']),
                 'regularPrice': ''
             }
             try:
@@ -257,7 +251,7 @@ msg = 'Execution time: {} seconds.'.format(round(elapsed_time,4))
 Log.append(msg)
 print(msg)
 
-msg = 'Execution time: {} seconds.'.format(round(elapsed_time/60,4))
+msg = 'Execution time: {} minutes.'.format(round(elapsed_time/60,4))
 Log.append(msg)
 print(msg)
 
