@@ -4,30 +4,22 @@ from scrapy.spiders import CrawlSpider, Rule
 from scrapy.crawler import CrawlerProcess
 import time
 from items import Rossmann
+from scrapy import Request
+
 
 class CrawlSpider(CrawlSpider):
     name = 'products'
     allowed_domains = ['rossmann.pl']
     
-    #It is manual at the moment, just to check if it goes over pages.
-    numberOfProductsMax = 1
+    numberOfProductsMax = 8
     start_urls = ["https://www.rossmann.pl/promocje?Page=%s" % page for page in range(1,numberOfProductsMax+1)]
 
-#This is for the first page, and it only scrapes the first "old price". I couldn't manage to make a dictionary to have all details.
-    # first_page = LinkExtractor(allow=r'/promocje')
-
-    # def parse_start_url(self, response):
-    #     return self.parse_item(response)
-
-#it finds every link that starts with /Produkt which is always 24
     product_details = LinkExtractor(allow=r'Produkt/')
-
-    # first_page_rule = Rule(first_page,  callback='parse_start_url', follow=False)
+    first_page_rule = Rule(start_urls, callback='parse_start_url', follow=False)
     rule_product_details = Rule(product_details, callback='parse_item', follow=False)
-
     rules = (
-        # first_page_rule,
         rule_product_details,
+        first_page_rule
     )
 
     def parse_item(self,response):
@@ -41,15 +33,32 @@ class CrawlSpider(CrawlSpider):
         else:
             Availability = "AVAILABLE ONLINE"
         item['Availability'] = Availability
-        #this does not work
-        item['rate'] = response.xpath('//span[@class="stars mr-2"]').get()
-        
+        NumberOfReviews = response.xpath('//*[@class = "product-info__rate d-flex py-2"]/span/text()[2]').extract()
+        if NumberOfReviews:
+            item['NumberOfReviews'] = NumberOfReviews[0]
+        else:
+            item['NumberOfReviews'] = "None"
+        Rate = response.xpath('//@data-rate').extract_first()
+        if Rate:
+            item['Rate'] = Rate[0]
+        else:
+            item['Rate'] = "None"
         yield item
+    
+
+    def parse_start_url(self, response):
+        item = Rossmann()
+        new_prices = response.xpath('//span[@class="tile-product__promo-price"]/text()').extract()
+        old_sellers = response.xpath('//span[@class="tile-product__old-price"]/text()').extract()
+        for price, seller in zip(new_prices, old_sellers):
+            item['NewPrice'] = price.strip()
+            item['OldPrice'] = seller.strip()
+            yield item
 
 process = CrawlerProcess(settings={
     "FEEDS": {
         "items.csv": {"format": "csv"},
-    },
+    },  
 })
 
 #It is automated now
