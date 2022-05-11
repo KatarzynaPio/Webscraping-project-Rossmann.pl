@@ -1,0 +1,2 @@
+in your terminal change cd to folder "Rossmann" and run:
+scrapy crawl products -o test.csv
