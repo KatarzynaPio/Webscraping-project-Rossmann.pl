@@ -12,6 +12,8 @@ class Rossmann(scrapy.Item):
     Size = Field()
     Link = Field()
     Availability = Field()
-    rate = Field()     
-    numberOfReviews = Field()
+    Rate = Field()     
+    NumberOfReviews = Field()
+    NewPrice = Field()
+    OldPrice = Field()
     pass
