@@ -11,14 +11,16 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 from csv import writer
 
-#This version has a loop for pages and also loop for scraping products.
+#This version works fine and loops pages and also the products.
+#the only thing left is to add more product details.
 
 def AddToCSV(List):
     with open("results.csv", "a+", newline='') as output_file:
         csv_writer = writer(output_file)
         csv_writer.writerow(List)
 
-pgnumber = 1
+#How many pages you want to be scraped?
+pgnumber = 3
 for page in range(1, pgnumber+1):
     page_url = "https://www.rossmann.pl/promocje?Page=" + str(page)
     browser = webdriver.Chrome(ChromeDriverManager().install())
@@ -36,14 +38,10 @@ for page in range(1, pgnumber+1):
             Name = WebDriverWait(browser, 10).until(EC.visibility_of_element_located((By.CLASS_NAME, 'h1'))).text
             Old_Price = browser.find_element(By.XPATH, value='//span[@class="regular"]').text
             New_Price = browser.find_element(By.XPATH, value='//span[@class="promo"]').text
-            Size = browser.find_element(By.XPATH, value = '//h2[@class="product-info__caption"]').text
-            #Category does not work yet.
-            # Category = driver.find_element(By.XPATH, value ='//li[@class="breadcrumb-item"]/a/span').text
             Link = href
             
-
             #Pushing to CSV
-            row_list = [Name, Old_Price, New_Price, Size, Link]
+            row_list = [Name, Old_Price, New_Price, Link]
             AddToCSV(row_list)
 
             #Close the new window
