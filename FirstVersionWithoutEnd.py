@@ -9,6 +9,8 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 from csv import writer
 
+#This version scrapes endlessly, without any loop and manually finds the next page, clicks on it, and continues to scrape.
+
 #The time bot should wait before scrape
 timeout = 5
 
@@ -50,6 +52,7 @@ while True:
             Name = WebDriverWait(browser, timeout).until(EC.visibility_of_element_located((By.CLASS_NAME, 'h1'))).text
             Old_Price = browser.find_element(By.XPATH, value='//span[@class="regular"]').text
             New_Price = browser.find_element(By.XPATH, value='//span[@class="promo"]').text
+            
 
             #Pushing to CSV
             row_list = [Name, Old_Price, New_Price]
@@ -61,9 +64,10 @@ while True:
             browser.switch_to.window(browser.window_handles[0])
 
         #Scrolling down to end of page so it can click on the next page button
-        browser.execute_script("window.scrollTo(0, 6500)") 
-        time.sleep(3)
-        #Next Page button
+            element = WebDriverWait(browser, 10).until(EC.visibility_of_element_located((By.XPATH, '//div[@class="pages align-items-center center "]')))
+            browser.execute_script("arguments[0].scrollIntoView(false);", element)
+            time.sleep(5)
+        #Next Page button click
         WebDriverWait(browser, 5).until(EC.visibility_of_element_located((By.XPATH, '//div[@class="pages align-items-center center "]/a[3]'))).click()
         time.sleep(3)
     except:
