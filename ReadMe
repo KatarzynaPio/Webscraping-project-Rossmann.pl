@@ -30,5 +30,8 @@ please open the file rossmann_SCRAPY.py and modify the constants.
 Please download the folder named “Selenium”.
 To execute the scraping process, open and run the python file named "Rossmann_Selenium".
 To change the program settings, such as number of products to scrape, modify the constant in python file.
+
+As a results you will obtain csv file.
+
 Further description is provided in the file.
 
