@@ -72,16 +72,16 @@ for page in range(1, pgnumber+1):
 
             try:
                 Review = browser.find_element(By.XPATH,"//div[@class='product-info d-flex']").find_elements(By.TAG_NAME, 'span')
-                Rank = Review[0].get_attribute('data-rate')
+                Rate = Review[0].get_attribute('data-rate')
                 NumbOfReviews = Review[1].text
             
             except:
-                Rank = "None"
+                Rate = "None"
                 NumbOfReviews = "None"
 
             
             #Saving to CSV
-            row_list = [Name, Old_Price, New_Price, ShortDesc, Link, Availability, Category, Image, NumbOfReviews, Rank]
+            row_list = [Name, Old_Price, New_Price, ShortDesc, Link, Availability, Category, Image, NumbOfReviews, Rate]
             AddToCSV(row_list)
 
             #Close the new window
