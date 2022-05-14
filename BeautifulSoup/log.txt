@@ -1,7 +1,0 @@
-Scraped data was saved here: /home/katarzyna/Pulpit/Data Science/II Sem/Web Scraping/Webscraping_project/BeautifulSoup/AllProducts.csv
-Number od scraped products: 6393
-Execution time: 5998.001 seconds.
-Execution time: 99.9667 minutes.
-Products that have not been scraped:
-    * https://www.rossmann.pl/Produkt/Ozdoby-do-wlosow/For-Your-Beauty-Ozdoby-do-wlosow-#FYB-Gumki-do-wlosow-czarne-MICHAELA-15-szt-1,219919,8678
-    * https://www.rossmann.pl/Produkt/Preparaty-na-ukaszenia/#Sprawdzkleszcza-test-do-wykrywania-bakterii-boreliozy-u-kleszcza-1-szt,372964,8961
