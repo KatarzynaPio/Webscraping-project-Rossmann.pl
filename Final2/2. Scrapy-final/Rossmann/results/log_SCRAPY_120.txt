@@ -1,0 +1,1729 @@
+2022-05-14 08:07:17 [scrapy.utils.log] INFO: Scrapy 2.6.1 started (bot: Rossmann)
+2022-05-14 08:07:17 [scrapy.utils.log] INFO: Versions: lxml 4.8.0.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 22.2.0, Python 3.10.4 (main, Mar 23 2022, 23:05:40) [GCC 11.2.0], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Linux-5.15.32-1-MANJARO-x86_64-with-glibc2.35
+2022-05-14 08:07:17 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'Rossmann',
+ 'EDITOR': '/usr/bin/nano',
+ 'LOG_FILE': 'results/log_SCRAPY_120.txt',
+ 'NEWSPIDER_MODULE': 'Rossmann.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['Rossmann.spiders']}
+2022-05-14 08:07:17 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2022-05-14 08:07:17 [scrapy.extensions.telnet] INFO: Telnet Password: bc3f726e4daf76cc
+2022-05-14 08:07:17 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2022-05-14 08:07:17 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-05-14 08:07:17 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-05-14 08:07:17 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-05-14 08:07:17 [scrapy.core.engine] INFO: Spider opened
+2022-05-14 08:07:17 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-05-14 08:07:17 [py.warnings] WARNING: /home/katarzyna/.local/lib/python3.10/site-packages/scrapy/spidermiddlewares/offsite.py:65: URLWarning: allowed_domains accepts only domains, not URLs. Ignoring URL entry https://www.rossmann.pl in allowed_domains.
+  warnings.warn(message, URLWarning)
+
+2022-05-14 08:07:17 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-05-14 08:07:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/robots.txt> (referer: None)
+2022-05-14 08:07:18 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.rossmann.pl/promocje?Page=5&PageSize=24> from <GET https://www.rossmann.pl/promocje?Page=5>
+2022-05-14 08:07:18 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.rossmann.pl/promocje?Page=4&PageSize=24> from <GET https://www.rossmann.pl/promocje?Page=4>
+2022-05-14 08:07:18 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.rossmann.pl/promocje?Page=2&PageSize=24> from <GET https://www.rossmann.pl/promocje?Page=2>
+2022-05-14 08:07:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/promocje?Page=5&PageSize=24> (referer: None)
+2022-05-14 08:07:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/promocje?Page=4&PageSize=24> (referer: None)
+2022-05-14 08:07:18 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.rossmann.pl/promocje?Page=1&PageSize=24> from <GET https://www.rossmann.pl/promocje?Page=1>
+2022-05-14 08:07:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/promocje?Page=2&PageSize=24> (referer: None)
+2022-05-14 08:07:18 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.rossmann.pl/promocje?Page=3&PageSize=24> from <GET https://www.rossmann.pl/promocje?Page=3>
+2022-05-14 08:07:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/promocje?Page=1&PageSize=24> (referer: None)
+2022-05-14 08:07:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/promocje?Page=3&PageSize=24> (referer: None)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Serum/Bielenda-Royal-Bee-Elixir-przeciwzmarszczkowe-serum-aktywnie-rewitalizujace-na-dzien-i-na-noc-30-ml,372615,9225> (referer: https://www.rossmann.pl/promocje?Page=5&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Lirene-Acid-Power-wypelniajacy-krem-przeciwzmarszczkowy-na-dzien-i-na-noc-kazdy-rodzaj-cery-50-ml,378794,9223> (referer: https://www.rossmann.pl/promocje?Page=5&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/beBIO-Ewa-Chodakowska-naturalny-krem-do-twarzy-50-odzywczy-na-dzien-i-na-noc-50-ml,382364,9223> (referer: https://www.rossmann.pl/promocje?Page=5&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Perfecta-Neo-Elixir-Mlodosci-krem-przeciwzmarszczkowy-na-dzien-i-na-noc-60-50-ml,369989,9223> (referer: https://www.rossmann.pl/promocje?Page=4&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/beBIO-Ewa-Chodakowska-naturalny-krem-do-twarzy-50-wygladzajacy-na-dzien-50-ml,382367,9223> (referer: https://www.rossmann.pl/promocje?Page=5&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Serum/Alterra-booster-hialuronowy-15-ml,340617,9225> (referer: https://www.rossmann.pl/promocje?Page=5&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Serum/Isana-Night-Beauty-kapsulki-z-retinolem-do-twarzy-1-szt,393647,9225> (referer: https://www.rossmann.pl/promocje?Page=5&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Serum/Isana-Q10-przeciwzmarszczkowe-kapsulki-pielegnacyjne-z-kompleksem-anti-age-7-szt,194846,9225> (referer: https://www.rossmann.pl/promocje?Page=5&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Serum/Isana-Q10-ampulki-koncentrat-przeciwzmarszczkowy-72-ml,188189,9225> (referer: https://www.rossmann.pl/promocje?Page=5&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Serum/Isana-ampulki-z-prowitamina-B5-7x2-ml,377724,9225> (referer: https://www.rossmann.pl/promocje?Page=5&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Serum/Isana-Hyaluron-Booster-ampulki-koncentrat-nawilzajacy-7x2-ml,180073,9225> (referer: https://www.rossmann.pl/promocje?Page=5&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Serum/Isana-Vitamin-Booster-ampulki-z-retinolem-witamina-C-i-witamina-E-7x2-ml,317776,9225> (referer: https://www.rossmann.pl/promocje?Page=5&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Lirene-Acid-Power-rewitalizujacy-krem-wyrownujacy-koloryt-na-dzien-i-na-noc-cera-z-przebarwieniami-,381434,9223> (referer: https://www.rossmann.pl/promocje?Page=5&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Serum/Bielenda-Royal-Bee-Elixir-przeciwzmarszczkowe-serum-aktywnie-rewitalizujace-na-dzien-i-na-noc-30-ml,372615,9225>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Serum',
+ 'Description': 'przeciwzmarszczkowe serum aktywnie rewitalizujące na dzień i '
+                'na noc30 ml, nr kat. 372615',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/311175_372615_1280_720_102131.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Serum/Bielenda-Royal-Bee-Elixir-przeciwzmarszczkowe-serum-aktywnie-rewitalizujace-na-dzien-i-na-noc-30-ml,372615,9225',
+ 'Name': 'BIELENDA Royal Bee Elixir',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '21.49',
+ 'Rate': 'None',
+ 'RegularPrice': '29.99'}
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Serum/Alterra-serum-z-witaminami-triple-vitamin-booster-15-ml,340618,9225> (referer: https://www.rossmann.pl/promocje?Page=5&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-40-przeciwzmarszczkowy-krem-wygladzajacy-na-dzien-50-ml,223563,9223> (referer: https://www.rossmann.pl/promocje?Page=5&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Lirene-Acid-Power-wypelniajacy-krem-przeciwzmarszczkowy-na-dzien-i-na-noc-kazdy-rodzaj-cery-50-ml,378794,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'wypełniający krem przeciwzmarszczkowy na dzień i na noc, '
+                'każdy rodzaj cery50 ml, nr kat. 378794',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/331607_378794_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Lirene-Acid-Power-wypelniajacy-krem-przeciwzmarszczkowy-na-dzien-i-na-noc-kazdy-rodzaj-cery-50-ml,378794,9223',
+ 'Name': 'LIRENE Acid Power',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '19.99',
+ 'Rate': 'None',
+ 'RegularPrice': '26.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/beBIO-Ewa-Chodakowska-naturalny-krem-do-twarzy-50-odzywczy-na-dzien-i-na-noc-50-ml,382364,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'naturalny krem do twarzy 50+ odżywczy na dzień i na noc50 ml, '
+                'nr kat. 382364',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/319978_382364_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/beBIO-Ewa-Chodakowska-naturalny-krem-do-twarzy-50-odzywczy-na-dzien-i-na-noc-50-ml,382364,9223',
+ 'Name': 'BEBIO Ewa Chodakowska',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '18.99',
+ 'Rate': 'None',
+ 'RegularPrice': '25.49'}
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Dermika-Luxury-Caviar-krem-aktywnie-regenerujacy-na-dzien-i-na-noc-60-50-ml,381351,9223> (referer: https://www.rossmann.pl/promocje?Page=2&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Janda-Collagen-Reconstructor-krem-pod-oczy-redukujacy-zmarszczki-i-cienie-pod-oczami-15-ml,331792,9223> (referer: https://www.rossmann.pl/promocje?Page=1&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Perfecta-Neo-Elixir-Mlodosci-krem-przeciwzmarszczkowy-na-dzien-i-na-noc-60-50-ml,369989,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'krem przeciwzmarszczkowy na dzień i na noc, 60+50 ml, nr kat. '
+                '369989',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/314361_369989_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Perfecta-Neo-Elixir-Mlodosci-krem-przeciwzmarszczkowy-na-dzien-i-na-noc-60-50-ml,369989,9223',
+ 'Name': 'PERFECTA Neo-Elixir Młodości',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '24.99',
+ 'Rate': 'None',
+ 'RegularPrice': '33.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/beBIO-Ewa-Chodakowska-naturalny-krem-do-twarzy-50-wygladzajacy-na-dzien-50-ml,382367,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'naturalny krem do twarzy 50+ wygłądzający na dzień50 ml, nr '
+                'kat. 382367',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/319983_382367_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/beBIO-Ewa-Chodakowska-naturalny-krem-do-twarzy-50-wygladzajacy-na-dzien-50-ml,382367,9223',
+ 'Name': 'BEBIO Ewa Chodakowska',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '18.99',
+ 'Rate': 'None',
+ 'RegularPrice': '25.49'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Serum/Alterra-booster-hialuronowy-15-ml,340617,9225>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Serum',
+ 'Description': 'booster hialuronowy15 ml, nr kat. 340617',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/347424_340617_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Serum/Alterra-booster-hialuronowy-15-ml,340617,9225',
+ 'Name': 'ALTERRA',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '13.49',
+ 'Rate': 'None',
+ 'RegularPrice': '18.99'}
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Perfecta-Neo-Elixir-Mlodosci-krem-przeciwzmarszczkowy-na-dzien-i-na-noc-50-50-ml,369987,9223> (referer: https://www.rossmann.pl/promocje?Page=3&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Nivea-Cellular-EXPERT-LIFT-zaawansowany-krem-na-noc-przeciwzmarszczkowy-50-ml,394832,9223> (referer: https://www.rossmann.pl/promocje?Page=3&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Nivea-Cellular-EXPERT-LIFT-zaawansowany-krem-przeciwzmarszczkowy-na-dzien-50-ml,395579,9223> (referer: https://www.rossmann.pl/promocje?Page=3&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Serum/Isana-Night-Beauty-kapsulki-z-retinolem-do-twarzy-1-szt,393647,9225>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Serum',
+ 'Description': 'kapsułki z retinolem do twarzy1 szt., nr kat. 393647',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/347343_393647_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Serum/Isana-Night-Beauty-kapsulki-z-retinolem-do-twarzy-1-szt,393647,9225',
+ 'Name': 'ISANA Night & Beauty',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '6.69',
+ 'Rate': 'None',
+ 'RegularPrice': '9.49'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Serum/Isana-Q10-przeciwzmarszczkowe-kapsulki-pielegnacyjne-z-kompleksem-anti-age-7-szt,194846,9225>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Serum',
+ 'Description': 'przeciwzmarszczkowe kapsułki pielęgnacyjne z kompleksem '
+                'anti-age7 szt., nr kat. 194846',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/302728_194846_1280_720_99113.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Serum/Isana-Q10-przeciwzmarszczkowe-kapsulki-pielegnacyjne-z-kompleksem-anti-age-7-szt,194846,9225',
+ 'Name': 'ISANA Q10',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '6.69',
+ 'Rate': 'None',
+ 'RegularPrice': '9.49'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Serum/Isana-Q10-ampulki-koncentrat-przeciwzmarszczkowy-72-ml,188189,9225>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Serum',
+ 'Description': 'ampułki, koncentrat przeciwzmarszczkowy7×2 ml, nr kat. 188189',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/172313_188189_1280_720_47196.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Serum/Isana-Q10-ampulki-koncentrat-przeciwzmarszczkowy-72-ml,188189,9225',
+ 'Name': 'ISANA Q10',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '16.99',
+ 'Rate': 'None',
+ 'RegularPrice': '23.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Serum/Isana-ampulki-z-prowitamina-B5-7x2-ml,377724,9225>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Serum',
+ 'Description': 'ampułki z prowitaminą B57x2 ml, nr kat. 377724',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/325714_377724_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Serum/Isana-ampulki-z-prowitamina-B5-7x2-ml,377724,9225',
+ 'Name': 'ISANA',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '16.99',
+ 'Rate': 'None',
+ 'RegularPrice': '23.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Serum/Isana-Hyaluron-Booster-ampulki-koncentrat-nawilzajacy-7x2-ml,180073,9225>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Serum',
+ 'Description': 'ampułki koncentrat nawilżający7x2 ml, nr kat. 180073',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/239196_180073_1280_720_76882.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Serum/Isana-Hyaluron-Booster-ampulki-koncentrat-nawilzajacy-7x2-ml,180073,9225',
+ 'Name': 'ISANA Hyaluron Booster',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '16.99',
+ 'Rate': 'None',
+ 'RegularPrice': '23.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Serum/Isana-Vitamin-Booster-ampulki-z-retinolem-witamina-C-i-witamina-E-7x2-ml,317776,9225>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Serum',
+ 'Description': 'ampułki z retinolem witaminą C i witaminą E7x2 ml, nr kat. '
+                '317776',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/315373_317776_1280_720_104286.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Serum/Isana-Vitamin-Booster-ampulki-z-retinolem-witamina-C-i-witamina-E-7x2-ml,317776,9225',
+ 'Name': 'ISANA Vitamin Booster',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '22.49',
+ 'Rate': 'None',
+ 'RegularPrice': '31.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Lirene-Acid-Power-rewitalizujacy-krem-wyrownujacy-koloryt-na-dzien-i-na-noc-cera-z-przebarwieniami-,381434,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'rewitalizujący krem wyrównujący koloryt na dzień i na noc, '
+                'cera z przebarwieniami50 ml, nr kat. 381434',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/331608_381434_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Lirene-Acid-Power-rewitalizujacy-krem-wyrownujacy-koloryt-na-dzien-i-na-noc-cera-z-przebarwieniami-,381434,9223',
+ 'Name': 'LIRENE Acid Power',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '19.99',
+ 'Rate': 'None',
+ 'RegularPrice': '26.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Serum/Alterra-serum-z-witaminami-triple-vitamin-booster-15-ml,340618,9225>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Serum',
+ 'Description': 'serum z witaminami triple vitamin booster15 ml, nr kat. '
+                '340618',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/317465_340618_1280_720_105927.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Serum/Alterra-serum-z-witaminami-triple-vitamin-booster-15-ml,340618,9225',
+ 'Name': 'ALTERRA',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '13.49',
+ 'Rate': 'None',
+ 'RegularPrice': '18.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-40-przeciwzmarszczkowy-krem-wygladzajacy-na-dzien-50-ml,223563,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'przeciwzmarszczkowy krem wygładzający na dzień50 ml, nr kat. '
+                '223563',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/42467_223563_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-40-przeciwzmarszczkowy-krem-wygladzajacy-na-dzien-50-ml,223563,9223',
+ 'Name': "L'ORÉAL PARIS Ekspert Wieku 40+",
+ 'NumberOfReviews': '6',
+ 'PromoPrice': '16.99',
+ 'Rate': 5.0,
+ 'RegularPrice': '29.99'}
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Perfecta-Bio-Retinol-krem-przeciwzmarszczkowy-na-dzien-i-na-noc-50-50-ml,358087,9223> (referer: https://www.rossmann.pl/promocje?Page=3&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-pod-oczy/Perfecta-Neo-Elixir-Mlodosci-rozswietlajacy-krem-pod-oczy-15-ml,369984,9224> (referer: https://www.rossmann.pl/promocje?Page=3&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-pod-oczy/Perfecta-Bio-Retinol-krem-przeciwzmarszczkowy-pod-oczy-50-60-15-ml,358089,9224> (referer: https://www.rossmann.pl/promocje?Page=3&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Nivea-Hyaluron-Cellular-Filler-krem-przeciwzmarszczkowy-na-noc-50-ml,178246,9223> (referer: https://www.rossmann.pl/promocje?Page=3&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Dermika-Luxury-Caviar-krem-aktywnie-regenerujacy-na-dzien-i-na-noc-60-50-ml,381351,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'krem aktywnie regenerujący na dzień i na noc, 60+50 ml, nr '
+                'kat. 381351',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/327473_381351_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Dermika-Luxury-Caviar-krem-aktywnie-regenerujacy-na-dzien-i-na-noc-60-50-ml,381351,9223',
+ 'Name': 'DERMIKA Luxury Caviar',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '47.99',
+ 'Rate': 'None',
+ 'RegularPrice': '79.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Janda-Collagen-Reconstructor-krem-pod-oczy-redukujacy-zmarszczki-i-cienie-pod-oczami-15-ml,331792,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'krem pod oczy redukujący zmarszczki i cienie pod oczami15 ml, '
+                'nr kat. 331792',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/223336_331792_1280_720_70066.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Janda-Collagen-Reconstructor-krem-pod-oczy-redukujacy-zmarszczki-i-cienie-pod-oczami-15-ml,331792,9223',
+ 'Name': 'JANDA Collagen Reconstructor',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '27.99',
+ 'Rate': 'None',
+ 'RegularPrice': '37.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Perfecta-Neo-Elixir-Mlodosci-krem-przeciwzmarszczkowy-na-dzien-i-na-noc-50-50-ml,369987,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'krem przeciwzmarszczkowy na dzień i na noc, 50+50 ml, nr kat. '
+                '369987',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/314362_369987_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Perfecta-Neo-Elixir-Mlodosci-krem-przeciwzmarszczkowy-na-dzien-i-na-noc-50-50-ml,369987,9223',
+ 'Name': 'PERFECTA Neo-Elixir Młodości',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '24.99',
+ 'Rate': 'None',
+ 'RegularPrice': '33.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Nivea-Cellular-EXPERT-LIFT-zaawansowany-krem-na-noc-przeciwzmarszczkowy-50-ml,394832,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'zaawansowany krem na noc przeciwzmarszczkowy50 ml, nr kat. '
+                '394832',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/343268_394832_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Nivea-Cellular-EXPERT-LIFT-zaawansowany-krem-na-noc-przeciwzmarszczkowy-50-ml,394832,9223',
+ 'Name': 'NIVEA Cellular EXPERT LIFT',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '46.99',
+ 'Rate': 'None',
+ 'RegularPrice': '62.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Nivea-Cellular-EXPERT-LIFT-zaawansowany-krem-przeciwzmarszczkowy-na-dzien-50-ml,395579,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'zaawansowany krem przeciwzmarszczkowy na dzień50 ml, nr kat. '
+                '395579',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/343259_395579_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Nivea-Cellular-EXPERT-LIFT-zaawansowany-krem-przeciwzmarszczkowy-na-dzien-50-ml,395579,9223',
+ 'Name': 'NIVEA Cellular EXPERT LIFT',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '46.99',
+ 'Rate': 'None',
+ 'RegularPrice': '62.99'}
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Serum/Nivea-Cellular-PROFESSIONAL-serum-do-twarzy-odpowiednie-dla-wszystkich-typow-skory-30-ml,394828,9225> (referer: https://www.rossmann.pl/promocje?Page=3&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Onlybio-Ritualia-Tranquilty-krem-z-7-wyciagami-odmladzajacymi-na-noc-50-ml,368091,9223> (referer: https://www.rossmann.pl/promocje?Page=3&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Nivea-Hyaluron-Cellular-Filler-krem-przeciwzmarszczkowy-na-dzien-SPF-15-50-ml,178242,9223> (referer: https://www.rossmann.pl/promocje?Page=3&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Serum/Nivea-Cellular-PROFESSIONAL-serum-do-twarzy-odpowiednie-dla-wszystkich-typow-skory-30-ml,394829,9225> (referer: https://www.rossmann.pl/promocje?Page=3&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-pod-oczy/Nivea-Hyaluron-Cellular-Filler-przeciwzmarszczkowy-krem-pod-oczy-15-ml,178250,9224> (referer: https://www.rossmann.pl/promocje?Page=3&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-pod-oczy/Onlybio-Ritualia-Tranquilty-krem-pod-oczy-15-ml,367467,9224> (referer: https://www.rossmann.pl/promocje?Page=3&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Onlybio-Ritualia-Tranquilty-krem-brzoskwiniowy-na-dzien-50-ml,368090,9223> (referer: https://www.rossmann.pl/promocje?Page=3&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Perfecta-Bio-Retinol-krem-przeciwzmarszczkowy-na-dzien-i-na-noc-50-50-ml,358087,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'krem przeciwzmarszczkowy na dzień i na noc, 50+50 ml, nr kat. '
+                '358087',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/319311_358087_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Perfecta-Bio-Retinol-krem-przeciwzmarszczkowy-na-dzien-i-na-noc-50-50-ml,358087,9223',
+ 'Name': 'PERFECTA Bio Retinol',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '23.49',
+ 'Rate': 'None',
+ 'RegularPrice': '31.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-pod-oczy/Perfecta-Neo-Elixir-Mlodosci-rozswietlajacy-krem-pod-oczy-15-ml,369984,9224>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy pod oczy',
+ 'Description': 'rozświetlający krem pod oczy15 ml, nr kat. 369984',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/319321_369984_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-pod-oczy/Perfecta-Neo-Elixir-Mlodosci-rozswietlajacy-krem-pod-oczy-15-ml,369984,9224',
+ 'Name': 'PERFECTA Neo-Elixir Młodości',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '19.99',
+ 'Rate': 'None',
+ 'RegularPrice': '26.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-pod-oczy/Perfecta-Bio-Retinol-krem-przeciwzmarszczkowy-pod-oczy-50-60-15-ml,358089,9224>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy pod oczy',
+ 'Description': 'krem przeciwzmarszczkowy pod oczy, 50/60+15 ml, nr kat. '
+                '358089',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/319317_358089_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-pod-oczy/Perfecta-Bio-Retinol-krem-przeciwzmarszczkowy-pod-oczy-50-60-15-ml,358089,9224',
+ 'Name': 'PERFECTA Bio Retinol',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '19.99',
+ 'Rate': 'None',
+ 'RegularPrice': '26.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Nivea-Hyaluron-Cellular-Filler-krem-przeciwzmarszczkowy-na-noc-50-ml,178246,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'krem przeciwzmarszczkowy na noc50 ml, nr kat. 178246',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/302379_178246_1280_720_97817.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Nivea-Hyaluron-Cellular-Filler-krem-przeciwzmarszczkowy-na-noc-50-ml,178246,9223',
+ 'Name': 'NIVEA Hyaluron Cellular Filler',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '42.99',
+ 'Rate': 'None',
+ 'RegularPrice': '59.99'}
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Nivea-Cellular-Luminous-krem-na-noc-przeciw-przebarwieniom-50-ml,394826,9223> (referer: https://www.rossmann.pl/promocje?Page=3&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Yoskine-BIO-Collagen-przeciwzmarszczkowy-biokrem-liftingujacy-na-dzien-50-50-ml,370025,9223> (referer: https://www.rossmann.pl/promocje?Page=3&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Serum/Onlybio-Ritualia-Tranquilty-serum-do-twarzy-30-ml,367468,9225> (referer: https://www.rossmann.pl/promocje?Page=3&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Serum/Onlybio-Ritualia-Tranquilty-serum-do-twarzy-30-ml,368089,9225> (referer: https://www.rossmann.pl/promocje?Page=3&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Nivea-Cellular-Luminous-krem-fluid-na-dzien-tonujacy-przeciw-przebarwieniom-40-ml,394827,9223> (referer: https://www.rossmann.pl/promocje?Page=3&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Nivea-Cellular-Luminous-krem-przeciw-przebarwieniom-na-dzien-SPF-50-40-ml,381360,9223> (referer: https://www.rossmann.pl/promocje?Page=3&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Serum/Nivea-Cellular-Luminous-krem-redukujacy-cienie-pod-oczami-15-ml,394835,9225> (referer: https://www.rossmann.pl/promocje?Page=3&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-40-przeciwzmarszczkowy-krem-wygladzajacy-na-noc-50-ml,223564,9223> (referer: https://www.rossmann.pl/promocje?Page=5&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Serum/Nivea-Cellular-PROFESSIONAL-serum-do-twarzy-odpowiednie-dla-wszystkich-typow-skory-30-ml,394828,9225>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Serum',
+ 'Description': 'serum do twarzy odpowiednie dla wszystkich typów skóry30 ml, '
+                'nr kat. 394828',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/343293_394828_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Serum/Nivea-Cellular-PROFESSIONAL-serum-do-twarzy-odpowiednie-dla-wszystkich-typow-skory-30-ml,394828,9225',
+ 'Name': 'NIVEA Cellular PROFESSIONAL',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '43.99',
+ 'Rate': 'None',
+ 'RegularPrice': '59.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Onlybio-Ritualia-Tranquilty-krem-z-7-wyciagami-odmladzajacymi-na-noc-50-ml,368091,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'krem z 7 wyciągami odmładzającymi na noc50 ml, nr kat. 368091',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/310143_368091_1280_720_101513.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Onlybio-Ritualia-Tranquilty-krem-z-7-wyciagami-odmladzajacymi-na-noc-50-ml,368091,9223',
+ 'Name': 'ONLYBIO Ritualia Tranquilty',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '33.99',
+ 'Rate': 'None',
+ 'RegularPrice': '53.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Nivea-Hyaluron-Cellular-Filler-krem-przeciwzmarszczkowy-na-dzien-SPF-15-50-ml,178242,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'krem przeciwzmarszczkowy na dzień SPF 1550 ml, nr kat. 178242',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/302375_178242_1280_720_97817.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Nivea-Hyaluron-Cellular-Filler-krem-przeciwzmarszczkowy-na-dzien-SPF-15-50-ml,178242,9223',
+ 'Name': 'NIVEA Hyaluron Cellular Filler',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '42.99',
+ 'Rate': 'None',
+ 'RegularPrice': '59.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Serum/Nivea-Cellular-PROFESSIONAL-serum-do-twarzy-odpowiednie-dla-wszystkich-typow-skory-30-ml,394829,9225>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Serum',
+ 'Description': 'serum do twarzy odpowiednie dla wszystkich typów skóry30 ml, '
+                'nr kat. 394829',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/343298_394829_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Serum/Nivea-Cellular-PROFESSIONAL-serum-do-twarzy-odpowiednie-dla-wszystkich-typow-skory-30-ml,394829,9225',
+ 'Name': 'NIVEA Cellular PROFESSIONAL',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '43.99',
+ 'Rate': 'None',
+ 'RegularPrice': '59.99'}
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Dermika-Luxury-Caviar-krem-przeciwzmarszczkowy-eliksir-na-noc-50-ml,381353,9223> (referer: https://www.rossmann.pl/promocje?Page=3&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-pod-oczy/Nivea-Hyaluron-Cellular-Filler-przeciwzmarszczkowy-krem-pod-oczy-15-ml,178250,9224>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy pod oczy',
+ 'Description': 'przeciwzmarszczkowy krem pod oczy15 ml, nr kat. 178250',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/302392_178250_1280_720_97817.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-pod-oczy/Nivea-Hyaluron-Cellular-Filler-przeciwzmarszczkowy-krem-pod-oczy-15-ml,178250,9224',
+ 'Name': 'NIVEA Hyaluron Cellular Filler',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '42.99',
+ 'Rate': 'None',
+ 'RegularPrice': '59.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-pod-oczy/Onlybio-Ritualia-Tranquilty-krem-pod-oczy-15-ml,367467,9224>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy pod oczy',
+ 'Description': 'krem pod oczy 15 ml, nr kat. 367467',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/310078_367467_1280_720_101513.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-pod-oczy/Onlybio-Ritualia-Tranquilty-krem-pod-oczy-15-ml,367467,9224',
+ 'Name': 'ONLYBIO Ritualia Tranquilty',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '29.99',
+ 'Rate': 'None',
+ 'RegularPrice': '48.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Onlybio-Ritualia-Tranquilty-krem-brzoskwiniowy-na-dzien-50-ml,368090,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'krem brzoskwiniowy na dzień50 ml, nr kat. 368090',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/310152_368090_1280_720_101513.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Onlybio-Ritualia-Tranquilty-krem-brzoskwiniowy-na-dzien-50-ml,368090,9223',
+ 'Name': 'ONLYBIO Ritualia Tranquilty',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '33.99',
+ 'Rate': 'None',
+ 'RegularPrice': '53.99'}
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-pod-oczy/LOreal-Paris-Ekspert-Wieku-przeciwzmarszczkowy-krem-odbudowujacy-pod-oczy-60-15-ml,342650,9224> (referer: https://www.rossmann.pl/promocje?Page=1&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Serum/Nivea-Cellular-Luminous-intensywne-serum-przeciw-przebarwieniom-skory-30-ml,381361,9225> (referer: https://www.rossmann.pl/promocje?Page=3&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Dermika-Luxury-Caviar-krem-odbudowujacy-na-dzien-i-na-noc-70-50-ml,381352,9223> (referer: https://www.rossmann.pl/promocje?Page=3&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-60-przeciwzmarszczkowy-krem-odbudowujacy-na-dzien-50-ml,223574,9223> (referer: https://www.rossmann.pl/promocje?Page=1&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-60-przeciwzmarszczkowy-krem-odbudowujacy-na-noc-50-ml,223575,9223> (referer: https://www.rossmann.pl/promocje?Page=1&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Nivea-Cellular-Luminous-krem-na-noc-przeciw-przebarwieniom-50-ml,394826,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'krem na noc przeciw przebarwieniom50 ml, nr kat. 394826',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/340673_394826_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Nivea-Cellular-Luminous-krem-na-noc-przeciw-przebarwieniom-50-ml,394826,9223',
+ 'Name': 'NIVEA Cellular Luminous',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '59.99',
+ 'Rate': 'None',
+ 'RegularPrice': '79.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Yoskine-BIO-Collagen-przeciwzmarszczkowy-biokrem-liftingujacy-na-dzien-50-50-ml,370025,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'przeciwzmarszczkowy biokrem liftingujący na dzień 50+50 ml, '
+                'nr kat. 370025',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/319345_370025_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Yoskine-BIO-Collagen-przeciwzmarszczkowy-biokrem-liftingujacy-na-dzien-50-50-ml,370025,9223',
+ 'Name': 'YOSKINE BIO Collagen',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '43.99',
+ 'Rate': 'None',
+ 'RegularPrice': '59.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Serum/Onlybio-Ritualia-Tranquilty-serum-do-twarzy-30-ml,367468,9225>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Serum',
+ 'Description': 'serum do twarzy30 ml, nr kat. 367468',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/310069_367468_1280_720_101513.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Serum/Onlybio-Ritualia-Tranquilty-serum-do-twarzy-30-ml,367468,9225',
+ 'Name': 'ONLYBIO Ritualia Tranquilty',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '33.99',
+ 'Rate': 'None',
+ 'RegularPrice': '53.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Serum/Onlybio-Ritualia-Tranquilty-serum-do-twarzy-30-ml,368089,9225>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Serum',
+ 'Description': 'serum do twarzy30 ml, nr kat. 368089',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/310161_368089_1280_720_101513.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Serum/Onlybio-Ritualia-Tranquilty-serum-do-twarzy-30-ml,368089,9225',
+ 'Name': 'ONLYBIO Ritualia Tranquilty',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '33.99',
+ 'Rate': 'None',
+ 'RegularPrice': '53.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Nivea-Cellular-Luminous-krem-fluid-na-dzien-tonujacy-przeciw-przebarwieniom-40-ml,394827,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'krem-fluid na dzień tonujący przeciw przebarwieniom40 ml, nr '
+                'kat. 394827',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/343247_394827_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Nivea-Cellular-Luminous-krem-fluid-na-dzien-tonujacy-przeciw-przebarwieniom-40-ml,394827,9223',
+ 'Name': 'NIVEA Cellular Luminous',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '59.99',
+ 'Rate': 'None',
+ 'RegularPrice': '79.99'}
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-50-przeciwzmarszczkowy-krem-ujedrniajacy-na-noc-50-ml,223572,9223> (referer: https://www.rossmann.pl/promocje?Page=1&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Nivea-Cellular-Luminous-krem-przeciw-przebarwieniom-na-dzien-SPF-50-40-ml,381360,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'krem przeciw przebarwieniom na dzień SPF 5040 ml, nr kat. '
+                '381360',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/332372_381360_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Nivea-Cellular-Luminous-krem-przeciw-przebarwieniom-na-dzien-SPF-50-40-ml,381360,9223',
+ 'Name': 'NIVEA Cellular Luminous',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '59.99',
+ 'Rate': 'None',
+ 'RegularPrice': '79.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Serum/Nivea-Cellular-Luminous-krem-redukujacy-cienie-pod-oczami-15-ml,394835,9225>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Serum',
+ 'Description': 'krem redukujący cienie pod oczami15 ml, nr kat. 394835',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/343256_394835_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Serum/Nivea-Cellular-Luminous-krem-redukujacy-cienie-pod-oczami-15-ml,394835,9225',
+ 'Name': 'NIVEA Cellular Luminous',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '53.99',
+ 'Rate': 'None',
+ 'RegularPrice': '69.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-40-przeciwzmarszczkowy-krem-wygladzajacy-na-noc-50-ml,223564,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'przeciwzmarszczkowy krem wygładzający na noc50 ml, nr kat. '
+                '223564',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/42460_223564_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-40-przeciwzmarszczkowy-krem-wygladzajacy-na-noc-50-ml,223564,9223',
+ 'Name': "L'ORÉAL PARIS Ekspert Wieku 40+",
+ 'NumberOfReviews': '6',
+ 'PromoPrice': '16.99',
+ 'Rate': 5.0,
+ 'RegularPrice': '29.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Dermika-Luxury-Caviar-krem-przeciwzmarszczkowy-eliksir-na-noc-50-ml,381353,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'krem przeciwzmarszczkowy, eliksir na noc50 ml, nr kat. 381353',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/327485_381353_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Dermika-Luxury-Caviar-krem-przeciwzmarszczkowy-eliksir-na-noc-50-ml,381353,9223',
+ 'Name': 'DERMIKA Luxury Caviar',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '47.99',
+ 'Rate': 'None',
+ 'RegularPrice': '79.99'}
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-50-przeciwzmarszczkowy-krem-liftingujacy-50-50-ml,390616,9223> (referer: https://www.rossmann.pl/promocje?Page=1&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-50-przeciwzmarszczkowy-krem-ujedrniajacy-na-dzien-50-ml,223565,9223> (referer: https://www.rossmann.pl/promocje?Page=1&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-pod-oczy/LOreal-Paris-Ekspert-Wieku-przeciwzmarszczkowy-krem-odbudowujacy-pod-oczy-60-15-ml,342650,9224>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy pod oczy',
+ 'Description': 'przeciwzmarszczkowy krem odbudowujący pod oczy, 60+15 ml, nr '
+                'kat. 342650',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/244301_342650_1280_720_79896.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-pod-oczy/LOreal-Paris-Ekspert-Wieku-przeciwzmarszczkowy-krem-odbudowujacy-pod-oczy-60-15-ml,342650,9224',
+ 'Name': "L'ORÉAL PARIS Ekspert Wieku",
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '16.99',
+ 'Rate': 'None',
+ 'RegularPrice': '29.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Serum/Nivea-Cellular-Luminous-intensywne-serum-przeciw-przebarwieniom-skory-30-ml,381361,9225>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Serum',
+ 'Description': 'intensywne serum przeciw przebarwieniom skóry30 ml, nr kat. '
+                '381361',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/332371_381361_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Serum/Nivea-Cellular-Luminous-intensywne-serum-przeciw-przebarwieniom-skory-30-ml,381361,9225',
+ 'Name': 'NIVEA Cellular Luminous',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '66.99',
+ 'Rate': 'None',
+ 'RegularPrice': '89.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Dermika-Luxury-Caviar-krem-odbudowujacy-na-dzien-i-na-noc-70-50-ml,381352,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'krem odbudowujący na dzień i na noc, 70+50 ml, nr kat. 381352',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/327479_381352_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Dermika-Luxury-Caviar-krem-odbudowujacy-na-dzien-i-na-noc-70-50-ml,381352,9223',
+ 'Name': 'DERMIKA Luxury Caviar',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '47.99',
+ 'Rate': 'None',
+ 'RegularPrice': '79.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-60-przeciwzmarszczkowy-krem-odbudowujacy-na-dzien-50-ml,223574,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'przeciwzmarszczkowy krem odbudowujący na dzień50 ml, nr kat. '
+                '223574',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/209024_223574_1280_720_64454.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-60-przeciwzmarszczkowy-krem-odbudowujacy-na-dzien-50-ml,223574,9223',
+ 'Name': "L'ORÉAL PARIS Ekspert Wieku 60+",
+ 'NumberOfReviews': '6',
+ 'PromoPrice': '16.99',
+ 'Rate': 4.5,
+ 'RegularPrice': '29.99'}
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-pod-oczy/LOreal-Paris-Ekspert-Wieku-przeciwzmarszczkowy-krem-pod-oczy-50-15-ml,342678,9224> (referer: https://www.rossmann.pl/promocje?Page=1&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/AA-Technologia-Wieku-5-Repair-50-Aktywny-Lifting-liftingujacy-krem-rozswietlajacy-na-dzien-50-ml,381310,9223> (referer: https://www.rossmann.pl/promocje?Page=1&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/AA-Technologia-Wieku-5-Repair-50-Aktywny-Lifting-regenerujacy-krem-rozswietlajacy-na-noc-50-ml,381311,9223> (referer: https://www.rossmann.pl/promocje?Page=1&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-60-przeciwzmarszczkowy-krem-odbudowujacy-na-noc-50-ml,223575,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'przeciwzmarszczkowy krem odbudowujący na noc50 ml, nr kat. '
+                '223575',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/209026_223575_1280_720_64454.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-60-przeciwzmarszczkowy-krem-odbudowujacy-na-noc-50-ml,223575,9223',
+ 'Name': "L'ORÉAL PARIS Ekspert Wieku 60+",
+ 'NumberOfReviews': '6',
+ 'PromoPrice': '16.99',
+ 'Rate': 4.5,
+ 'RegularPrice': '29.99'}
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Christian-Laurent-Bakuchiol-odmladzajacy-krem-lifting-poprawiajacy-gestosc-skory-na-dzien-i-na-noc-,357732,9223> (referer: https://www.rossmann.pl/promocje?Page=1&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-50-przeciwzmarszczkowy-krem-ujedrniajacy-na-noc-50-ml,223572,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'przeciwzmarszczkowy krem ujędrniający na noc50 ml, nr kat. '
+                '223572',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/41983_223572_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-50-przeciwzmarszczkowy-krem-ujedrniajacy-na-noc-50-ml,223572,9223',
+ 'Name': "L'ORÉAL PARIS Ekspert Wieku 50+",
+ 'NumberOfReviews': '6',
+ 'PromoPrice': '16.99',
+ 'Rate': 5.0,
+ 'RegularPrice': '29.99'}
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Janda-Collagen-Reconstructor-ujedrniajacy-krem-redukujacy-zmarszczki-z-naturalnym-kolagenem-na-noc-,331790,9223> (referer: https://www.rossmann.pl/promocje?Page=1&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Janda-Collagen-Reconstructor-ujedrniajacy-krem-redukujacy-zmarszczki-z-naturalnym-kolagenem-na-dzie,331788,9223> (referer: https://www.rossmann.pl/promocje?Page=1&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-50-przeciwzmarszczkowy-krem-liftingujacy-50-50-ml,390616,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'przeciwzmarszczkowy krem liftingujący 50+50 ml, nr kat. '
+                '390616',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/349990_390616_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-50-przeciwzmarszczkowy-krem-liftingujacy-50-50-ml,390616,9223',
+ 'Name': "L'ORÉAL PARIS Ekspert Wieku 50+",
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '16.99',
+ 'Rate': 'None',
+ 'RegularPrice': '29.99'}
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Serum/Janda-Collagen-Reconstructor-odmladzajace-serum-odzywka-na-twarz-szyje-i-dekolt-50-ml,331796,9225> (referer: https://www.rossmann.pl/promocje?Page=1&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Age-Perfect-Zloty-Wiek-bogaty-krem-wzmacniajacy-na-noc-skora-dojrzala-60-50-ml,250871,9223> (referer: https://www.rossmann.pl/promocje?Page=1&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-50-przeciwzmarszczkowy-krem-ujedrniajacy-na-dzien-50-ml,223565,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'przeciwzmarszczkowy krem ujędrniający na dzień50 ml, nr kat. '
+                '223565',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/41980_223565_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-50-przeciwzmarszczkowy-krem-ujedrniajacy-na-dzien-50-ml,223565,9223',
+ 'Name': "L'ORÉAL PARIS Ekspert Wieku 50+",
+ 'NumberOfReviews': '6',
+ 'PromoPrice': '16.99',
+ 'Rate': 4.5,
+ 'RegularPrice': '29.99'}
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Age-Perfect-Zloty-Wiek-rozany-krem-wzmacniajacy-na-dzien-skora-dojrzala-i-pozbawiona-,250869,9223> (referer: https://www.rossmann.pl/promocje?Page=1&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Age-Perfect-Cell-Renew-krem-na-noc-regenerujacy-50-ml,390631,9223> (referer: https://www.rossmann.pl/promocje?Page=1&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Age-Perfect-Cell-Renew-krem-na-dzien-rewitalizujacy-50-ml,390629,9223> (referer: https://www.rossmann.pl/promocje?Page=1&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-pod-oczy/LOreal-Paris-Ekspert-Wieku-przeciwzmarszczkowy-krem-pod-oczy-50-15-ml,342678,9224>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy pod oczy',
+ 'Description': 'przeciwzmarszczkowy krem pod oczy, 50+15 ml, nr kat. 342678',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/244152_342678_1280_720_79890.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-pod-oczy/LOreal-Paris-Ekspert-Wieku-przeciwzmarszczkowy-krem-pod-oczy-50-15-ml,342678,9224',
+ 'Name': "L'ORÉAL PARIS Ekspert Wieku",
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '16.99',
+ 'Rate': 'None',
+ 'RegularPrice': '29.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/AA-Technologia-Wieku-5-Repair-50-Aktywny-Lifting-liftingujacy-krem-rozswietlajacy-na-dzien-50-ml,381310,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'liftingujący krem rozświetlający na dzień50 ml, nr kat. '
+                '381310',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/333464_381310_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/AA-Technologia-Wieku-5-Repair-50-Aktywny-Lifting-liftingujacy-krem-rozswietlajacy-na-dzien-50-ml,381310,9223',
+ 'Name': 'AA Technologia Wieku 5 Repair 50+ Aktywny Lifting',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '21.99',
+ 'Rate': 'None',
+ 'RegularPrice': '29.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/AA-Technologia-Wieku-5-Repair-50-Aktywny-Lifting-regenerujacy-krem-rozswietlajacy-na-noc-50-ml,381311,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'regenerujący krem rozświetlający na noc50 ml, nr kat. 381311',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/333463_381311_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/AA-Technologia-Wieku-5-Repair-50-Aktywny-Lifting-regenerujacy-krem-rozswietlajacy-na-noc-50-ml,381311,9223',
+ 'Name': 'AA Technologia Wieku 5 Repair 50+ Aktywny Lifting',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '21.99',
+ 'Rate': 'None',
+ 'RegularPrice': '29.99'}
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Age-Perfect-Cell-Renew-krem-na-dzien-rewitalizujacy-SPF-30-50-ml,390632,9223> (referer: https://www.rossmann.pl/promocje?Page=1&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-pod-oczy/LOreal-Paris-Age-Perfect-Cell-Renew-krem-pod-oczy-15-ml,390630,9224> (referer: https://www.rossmann.pl/promocje?Page=1&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Serum/LOreal-Paris-Age-Perfect-Cell-Renew-serum-do-twarzy-na-noc-30-ml,390628,9225> (referer: https://www.rossmann.pl/promocje?Page=1&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Christian-Laurent-Bakuchiol-odmladzajacy-krem-lifting-poprawiajacy-gestosc-skory-na-dzien-i-na-noc-,357732,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'odmładzający krem-lifting poprawiający gęstość skóry, na '
+                'dzień i na noc, 60+50 ml, nr kat. 357732',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/273653_357732_1280_720_89242.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Christian-Laurent-Bakuchiol-odmladzajacy-krem-lifting-poprawiajacy-gestosc-skory-na-dzien-i-na-noc-,357732,9223',
+ 'Name': 'CHRISTIAN LAURENT Bakuchiol',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '28.99',
+ 'Rate': 'None',
+ 'RegularPrice': '45.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Janda-Collagen-Reconstructor-ujedrniajacy-krem-redukujacy-zmarszczki-z-naturalnym-kolagenem-na-noc-,331790,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'ujędrniający krem redukujący zmarszczki z naturalnym '
+                'kolagenem na noc50 ml, nr kat. 331790',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/223327_331790_1280_720_70066.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Janda-Collagen-Reconstructor-ujedrniajacy-krem-redukujacy-zmarszczki-z-naturalnym-kolagenem-na-noc-,331790,9223',
+ 'Name': 'JANDA Collagen Reconstructor',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '39.99',
+ 'Rate': 'None',
+ 'RegularPrice': '53.99'}
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Dermika-Luxury-Caviar-krem-wypelniajacy-zmarszczki-na-dzien-i-na-noc-50-50-ml,381350,9223> (referer: https://www.rossmann.pl/promocje?Page=2&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-pod-oczy/Dermika-Luxury-Caviar-krem-intensywnie-regenerujacy-pod-oczy-15-ml,381354,9224> (referer: https://www.rossmann.pl/promocje?Page=2&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Janda-Collagen-Reconstructor-ujedrniajacy-krem-redukujacy-zmarszczki-z-naturalnym-kolagenem-na-dzie,331788,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'ujędrniający krem redukujący zmarszczki z naturalnym '
+                'kolagenem na dzień50 ml, nr kat. 331788',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/223320_331788_1280_720_70066.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Janda-Collagen-Reconstructor-ujedrniajacy-krem-redukujacy-zmarszczki-z-naturalnym-kolagenem-na-dzie,331788,9223',
+ 'Name': 'JANDA Collagen Reconstructor',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '39.99',
+ 'Rate': 'None',
+ 'RegularPrice': '53.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Serum/Janda-Collagen-Reconstructor-odmladzajace-serum-odzywka-na-twarz-szyje-i-dekolt-50-ml,331796,9225>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Serum',
+ 'Description': 'odmładzające serum-odżywka na twarz, szyję i dekolt50 ml, nr '
+                'kat. 331796',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/223344_331796_1280_720_70072.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Serum/Janda-Collagen-Reconstructor-odmladzajace-serum-odzywka-na-twarz-szyje-i-dekolt-50-ml,331796,9225',
+ 'Name': 'JANDA Collagen Reconstructor',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '39.99',
+ 'Rate': 'None',
+ 'RegularPrice': '53.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Age-Perfect-Zloty-Wiek-bogaty-krem-wzmacniajacy-na-noc-skora-dojrzala-60-50-ml,250871,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'bogaty krem wzmacniający na noc, skóra dojrzała, 60+50 ml, nr '
+                'kat. 250871',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/334456_250871_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Age-Perfect-Zloty-Wiek-bogaty-krem-wzmacniajacy-na-noc-skora-dojrzala-60-50-ml,250871,9223',
+ 'Name': "L'ORÉAL PARIS Age Perfect Złoty Wiek",
+ 'NumberOfReviews': '15',
+ 'PromoPrice': '43.99',
+ 'Rate': 4.0,
+ 'RegularPrice': '59.99'}
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Lirene-Bursztynowa-Odbudowa-60-przeciwzmarszczkowy-krem-ujedrniajacy-na-dzien-i-na-noc-50-ml,164038,9223> (referer: https://www.rossmann.pl/promocje?Page=2&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Lirene-Retinolowe-Odzywienie-70-przeciwzmarszczkowy-krem-naprawczy-na-dzien-i-na-noc-50-ml,173175,9223> (referer: https://www.rossmann.pl/promocje?Page=2&PageSize=24)
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Age-Perfect-Zloty-Wiek-rozany-krem-wzmacniajacy-na-dzien-skora-dojrzala-i-pozbawiona-,250869,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'różany krem wzmacniający na dzień, skóra dojrzała i '
+                'pozbawiona blasku, 60+50 ml, nr kat. 250869',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/334455_250869_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Age-Perfect-Zloty-Wiek-rozany-krem-wzmacniajacy-na-dzien-skora-dojrzala-i-pozbawiona-,250869,9223',
+ 'Name': "L'ORÉAL PARIS Age Perfect Złoty Wiek",
+ 'NumberOfReviews': '10',
+ 'PromoPrice': '43.99',
+ 'Rate': 4.5,
+ 'RegularPrice': '59.99'}
+2022-05-14 08:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Age-Perfect-Cell-Renew-krem-na-noc-regenerujacy-50-ml,390631,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'krem na noc regenerujący50 ml, nr kat. 390631',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/350009_390631_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Age-Perfect-Cell-Renew-krem-na-noc-regenerujacy-50-ml,390631,9223',
+ 'Name': "L'ORÉAL PARIS Age Perfect Cell Renew",
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '52.99',
+ 'Rate': 'None',
+ 'RegularPrice': '79.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Age-Perfect-Cell-Renew-krem-na-dzien-rewitalizujacy-50-ml,390629,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'krem na dzień rewitalizujący50 ml, nr kat. 390629',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/350014_390629_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Age-Perfect-Cell-Renew-krem-na-dzien-rewitalizujacy-50-ml,390629,9223',
+ 'Name': "L'ORÉAL PARIS Age Perfect Cell Renew",
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '52.99',
+ 'Rate': 'None',
+ 'RegularPrice': '79.99'}
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Bielenda-Royal-Bee-Elixir-przeciwzmarszczkowy-krem-koncentrat-aktywnie-regenerujacy-na-dzien-i-na,372617,9223> (referer: https://www.rossmann.pl/promocje?Page=2&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Bielenda-Royal-Bee-Elixir-przeciwzmarszczkowy-krem-liftingujaco-ujedrniajacy-na-dzien-i-na-noc-50-,372618,9223> (referer: https://www.rossmann.pl/promocje?Page=2&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Bielenda-Royal-Bee-Elixir-przeciwzmarszczkowy-krem-koncentrat-silnie-odbudowujacy-na-dzien-i-na-n,372616,9223> (referer: https://www.rossmann.pl/promocje?Page=2&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Age-Perfect-Cell-Renew-krem-na-dzien-rewitalizujacy-SPF-30-50-ml,390632,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'krem na dzień rewitalizujący, SPF 3050 ml, nr kat. 390632',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/350000_390632_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Age-Perfect-Cell-Renew-krem-na-dzien-rewitalizujacy-SPF-30-50-ml,390632,9223',
+ 'Name': "L'ORÉAL PARIS Age Perfect Cell Renew",
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '52.99',
+ 'Rate': 'None',
+ 'RegularPrice': '79.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-pod-oczy/LOreal-Paris-Age-Perfect-Cell-Renew-krem-pod-oczy-15-ml,390630,9224>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy pod oczy',
+ 'Description': 'krem pod oczy 15 ml, nr kat. 390630',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/350004_390630_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-pod-oczy/LOreal-Paris-Age-Perfect-Cell-Renew-krem-pod-oczy-15-ml,390630,9224',
+ 'Name': "L'ORÉAL PARIS Age Perfect Cell Renew",
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '52.99',
+ 'Rate': 'None',
+ 'RegularPrice': '79.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Serum/LOreal-Paris-Age-Perfect-Cell-Renew-serum-do-twarzy-na-noc-30-ml,390628,9225>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Serum',
+ 'Description': 'serum do twarzy na noc30 ml, nr kat. 390628',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/349995_390628_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Serum/LOreal-Paris-Age-Perfect-Cell-Renew-serum-do-twarzy-na-noc-30-ml,390628,9225',
+ 'Name': "L'ORÉAL PARIS Age Perfect Cell Renew",
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '58.99',
+ 'Rate': 'None',
+ 'RegularPrice': '89.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Dermika-Luxury-Caviar-krem-wypelniajacy-zmarszczki-na-dzien-i-na-noc-50-50-ml,381350,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'krem wypełniający zmarszczki na dzień i na noc, 50+50 ml, nr '
+                'kat. 381350',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/327467_381350_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Dermika-Luxury-Caviar-krem-wypelniajacy-zmarszczki-na-dzien-i-na-noc-50-50-ml,381350,9223',
+ 'Name': 'DERMIKA Luxury Caviar',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '47.99',
+ 'Rate': 'None',
+ 'RegularPrice': '79.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-pod-oczy/Dermika-Luxury-Caviar-krem-intensywnie-regenerujacy-pod-oczy-15-ml,381354,9224>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy pod oczy',
+ 'Description': 'krem intensywnie regenerujący pod oczy15 ml, nr kat. 381354',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/327491_381354_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-pod-oczy/Dermika-Luxury-Caviar-krem-intensywnie-regenerujacy-pod-oczy-15-ml,381354,9224',
+ 'Name': 'DERMIKA Luxury Caviar',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '32.99',
+ 'Rate': 'None',
+ 'RegularPrice': '53.99'}
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/AA-Technologia-Wieku-5-Repair-70-Intensywne-Odzywienie-krem-intensywnie-regenerujacy-na-dzien-i-na,291434,9223> (referer: https://www.rossmann.pl/promocje?Page=2&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Perfecta-Fenomen-C-regenerujacy-krem-ujedrniajacy-na-dzien-i-na-noc-60-SPF-6-50-ml,248619,9223> (referer: https://www.rossmann.pl/promocje?Page=2&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/AA-Technologia-Wieku-5-Repair-70-Intensywne-Odzywienie-krem-wzmacniajacy-na-noc-skora-wrazliwa-i-s,291437,9223> (referer: https://www.rossmann.pl/promocje?Page=2&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Perfecta-Fenomen-C-regenerujacy-krem-odbudowujacy-na-dzien-i-na-noc-70-SPF-6-50-ml,276349,9223> (referer: https://www.rossmann.pl/promocje?Page=2&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Lirene-Bursztynowa-Odbudowa-60-przeciwzmarszczkowy-krem-ujedrniajacy-na-dzien-i-na-noc-50-ml,164038,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'przeciwzmarszczkowy krem ujędrniający na dzień i na noc50 ml, '
+                'nr kat. 164038',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/346283_164038_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Lirene-Bursztynowa-Odbudowa-60-przeciwzmarszczkowy-krem-ujedrniajacy-na-dzien-i-na-noc-50-ml,164038,9223',
+ 'Name': 'LIRENE Bursztynowa Odbudowa 60+',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '13.99',
+ 'Rate': 'None',
+ 'RegularPrice': '19.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Lirene-Retinolowe-Odzywienie-70-przeciwzmarszczkowy-krem-naprawczy-na-dzien-i-na-noc-50-ml,173175,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'przeciwzmarszczkowy krem naprawczy na dzień i na noc50 ml, nr '
+                'kat. 173175',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/259161_173175_1280_720_85258.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Lirene-Retinolowe-Odzywienie-70-przeciwzmarszczkowy-krem-naprawczy-na-dzien-i-na-noc-50-ml,173175,9223',
+ 'Name': 'LIRENE Retinolowe Odżywienie 70+',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '13.99',
+ 'Rate': 'None',
+ 'RegularPrice': '19.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Bielenda-Royal-Bee-Elixir-przeciwzmarszczkowy-krem-koncentrat-aktywnie-regenerujacy-na-dzien-i-na,372617,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'przeciwzmarszczkowy krem - koncentrat aktywnie regenerujący, '
+                'na dzień i na noc, 60+50 ml, nr kat. 372617',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/311165_372617_1280_720_102131.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Bielenda-Royal-Bee-Elixir-przeciwzmarszczkowy-krem-koncentrat-aktywnie-regenerujacy-na-dzien-i-na,372617,9223',
+ 'Name': 'BIELENDA Royal Bee Elixir',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '19.99',
+ 'Rate': 'None',
+ 'RegularPrice': '27.49'}
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-pod-oczy/AA-Technologia-Wieku-5-Repair-70-Intensywne-Odzywienie-krem-pod-oczy-nawilzajaco-odzywczy-15-ml,291438,9224> (referer: https://www.rossmann.pl/promocje?Page=2&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Bielenda-Royal-Bee-Elixir-przeciwzmarszczkowy-krem-liftingujaco-ujedrniajacy-na-dzien-i-na-noc-50-,372618,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'przeciwzmarszczkowy krem liftingująco- ujędrniający na dzień '
+                'i na noc, 50+50 ml, nr kat. 372618',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/311160_372618_1280_720_102131.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Bielenda-Royal-Bee-Elixir-przeciwzmarszczkowy-krem-liftingujaco-ujedrniajacy-na-dzien-i-na-noc-50-,372618,9223',
+ 'Name': 'BIELENDA Royal Bee Elixir',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '19.99',
+ 'Rate': 'None',
+ 'RegularPrice': '27.49'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Bielenda-Royal-Bee-Elixir-przeciwzmarszczkowy-krem-koncentrat-silnie-odbudowujacy-na-dzien-i-na-n,372616,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'przeciwzmarszczkowy krem - koncentrat silnie odbudowujący, na '
+                'dzień i na noc, 70+50 ml, nr kat. 372616',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/311170_372616_1280_720_102131.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Bielenda-Royal-Bee-Elixir-przeciwzmarszczkowy-krem-koncentrat-silnie-odbudowujacy-na-dzien-i-na-n,372616,9223',
+ 'Name': 'BIELENDA Royal Bee Elixir',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '19.99',
+ 'Rate': 'None',
+ 'RegularPrice': '27.49'}
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/AA-Technologia-Wieku-5-Repair-60-Zlota-Kuracja-regenerujacy-krem-odbudowujacy-na-noc-skora-wrazliw,291425,9223> (referer: https://www.rossmann.pl/promocje?Page=2&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/AA-Technologia-Wieku-5-Repair-60-Zlota-Kuracja-ujedrniajacy-krem-wzmacniajacy-na-noc-skora-wrazliw,291428,9223> (referer: https://www.rossmann.pl/promocje?Page=2&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/AA-Technologia-Wieku-5-Repair-60-Zlota-Kuracja-krem-przeciwzmarszczkowy-na-dzien-skora-wrazliwa-i-,291422,9223> (referer: https://www.rossmann.pl/promocje?Page=2&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-pod-oczy/AA-Technologia-Wieku-5-Repair-60-Zlota-Kuracja-krem-pod-oczy-napinajaco-odzywczy-15-ml,291430,9224> (referer: https://www.rossmann.pl/promocje?Page=2&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-60-kompleksowy-krem-modelujacy-na-dzien-i-na-noc-twarz-szyja-dekolt-50,239014,9223> (referer: https://www.rossmann.pl/promocje?Page=1&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/AA-Technologia-Wieku-5-Repair-70-Intensywne-Odzywienie-krem-intensywnie-regenerujacy-na-dzien-i-na,291434,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'krem intensywnie regenerujący na dzień i na noc skóra '
+                'wrażliwa i skłonna do alergii50 ml, nr kat. 291434',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/334051_291434_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/AA-Technologia-Wieku-5-Repair-70-Intensywne-Odzywienie-krem-intensywnie-regenerujacy-na-dzien-i-na,291434,9223',
+ 'Name': 'AA Technologia Wieku 5 Repair 70+ Intensywne Odżywienie',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '21.99',
+ 'Rate': 'None',
+ 'RegularPrice': '29.99'}
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-pod-oczy/AA-Technologia-Wieku-5-Repair-50-Aktywny-Lifting-rewitalizujacy-krem-rozswietlajacy-pod-oczy-15-ml,381297,9224> (referer: https://www.rossmann.pl/promocje?Page=1&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Perfecta-Fenomen-C-regenerujacy-krem-ujedrniajacy-na-dzien-i-na-noc-60-SPF-6-50-ml,248619,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'regenerujący krem ujędrniający na dzień i na noc, 60+, SPF '
+                '650 ml, nr kat. 248619',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/319339_248619_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Perfecta-Fenomen-C-regenerujacy-krem-ujedrniajacy-na-dzien-i-na-noc-60-SPF-6-50-ml,248619,9223',
+ 'Name': 'PERFECTA Fenomen C',
+ 'NumberOfReviews': '5',
+ 'PromoPrice': '21.99',
+ 'Rate': 4.5,
+ 'RegularPrice': '29.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/AA-Technologia-Wieku-5-Repair-70-Intensywne-Odzywienie-krem-wzmacniajacy-na-noc-skora-wrazliwa-i-s,291437,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'krem wzmacniający na noc skóra wrażliwa i skłonna do alergii, '
+                '70+50 ml, nr kat. 291437',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/334056_291437_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/AA-Technologia-Wieku-5-Repair-70-Intensywne-Odzywienie-krem-wzmacniajacy-na-noc-skora-wrazliwa-i-s,291437,9223',
+ 'Name': 'AA Technologia Wieku 5 Repair 70+ Intensywne Odżywienie',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '21.99',
+ 'Rate': 'None',
+ 'RegularPrice': '29.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Perfecta-Fenomen-C-regenerujacy-krem-odbudowujacy-na-dzien-i-na-noc-70-SPF-6-50-ml,276349,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'regenerujący krem odbudowujący na dzień i na noc, 70+, SPF '
+                '650 ml, nr kat. 276349',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/319337_276349_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Perfecta-Fenomen-C-regenerujacy-krem-odbudowujacy-na-dzien-i-na-noc-70-SPF-6-50-ml,276349,9223',
+ 'Name': 'PERFECTA Fenomen C',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '21.99',
+ 'Rate': 'None',
+ 'RegularPrice': '29.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-pod-oczy/AA-Technologia-Wieku-5-Repair-70-Intensywne-Odzywienie-krem-pod-oczy-nawilzajaco-odzywczy-15-ml,291438,9224>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy pod oczy',
+ 'Description': 'krem pod oczy nawilżająco-odżywczy15 ml, nr kat. 291438',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/334061_291438_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-pod-oczy/AA-Technologia-Wieku-5-Repair-70-Intensywne-Odzywienie-krem-pod-oczy-nawilzajaco-odzywczy-15-ml,291438,9224',
+ 'Name': 'AA Technologia Wieku 5 Repair 70+ Intensywne Odżywienie',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '16.49',
+ 'Rate': 'None',
+ 'RegularPrice': '21.99'}
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Eveline-Cosmetics-Royal-Snail-skoncentrowany-krem-aktywnie-regenerujacy-na-dzien-i-na-noc-cera-dojr,297439,9223> (referer: https://www.rossmann.pl/promocje?Page=2&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Eveline-Cosmetics-Royal-Snail-skoncentrowany-krem-ultranaprawczy-na-dzien-i-na-noc-cera-dojrzala-60,297438,9223> (referer: https://www.rossmann.pl/promocje?Page=2&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Eveline-Cosmetics-Royal-Snail-skoncentrowany-krem-silnie-liftingujacy-na-dzien-i-na-noc-cera-dojrza,297435,9223> (referer: https://www.rossmann.pl/promocje?Page=2&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/AA-Technologia-Wieku-5-Repair-60-Zlota-Kuracja-regenerujacy-krem-odbudowujacy-na-noc-skora-wrazliw,291425,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'regenerujący krem odbudowujący na noc skóra wrażliwa i '
+                'skłonna do alergii50 ml, nr kat. 291425',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/334041_291425_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/AA-Technologia-Wieku-5-Repair-60-Zlota-Kuracja-regenerujacy-krem-odbudowujacy-na-noc-skora-wrazliw,291425,9223',
+ 'Name': 'AA Technologia Wieku 5 Repair 60+ Złota Kuracja',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '21.99',
+ 'Rate': 'None',
+ 'RegularPrice': '29.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/AA-Technologia-Wieku-5-Repair-60-Zlota-Kuracja-ujedrniajacy-krem-wzmacniajacy-na-noc-skora-wrazliw,291428,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'ujędrniający krem wzmacniający na noc skóra wrażliwa i '
+                'skłonna do alergii50 ml, nr kat. 291428',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/334046_291428_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/AA-Technologia-Wieku-5-Repair-60-Zlota-Kuracja-ujedrniajacy-krem-wzmacniajacy-na-noc-skora-wrazliw,291428,9223',
+ 'Name': 'AA Technologia Wieku 5 Repair 60+ Złota Kuracja',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '21.99',
+ 'Rate': 'None',
+ 'RegularPrice': '29.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/AA-Technologia-Wieku-5-Repair-60-Zlota-Kuracja-krem-przeciwzmarszczkowy-na-dzien-skora-wrazliwa-i-,291422,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'krem przeciwzmarszczkowy na dzień skóra wrażliwa i skłonna do '
+                'alergii50 ml, nr kat. 291422',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/334036_291422_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/AA-Technologia-Wieku-5-Repair-60-Zlota-Kuracja-krem-przeciwzmarszczkowy-na-dzien-skora-wrazliwa-i-,291422,9223',
+ 'Name': 'AA Technologia Wieku 5 Repair 60+ Złota Kuracja',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '21.99',
+ 'Rate': 'None',
+ 'RegularPrice': '29.99'}
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-pod-oczy/Eveline-Cosmetics-Royal-Snail-skoncentrowany-krem-pod-oczy-i-na-powieki-intensywnie-liftingujacy-na,297443,9224> (referer: https://www.rossmann.pl/promocje?Page=2&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-70-przeciwzmarszczkowy-krem-odzywczy-na-noc-50-ml,258640,9223> (referer: https://www.rossmann.pl/promocje?Page=2&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-70-przeciwzmarszczkowy-krem-odzywczy-na-dzien-50-ml,258637,9223> (referer: https://www.rossmann.pl/promocje?Page=2&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-pod-oczy/AA-Technologia-Wieku-5-Repair-60-Zlota-Kuracja-krem-pod-oczy-napinajaco-odzywczy-15-ml,291430,9224>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy pod oczy',
+ 'Description': 'krem pod oczy napinająco-odżywczy15 ml, nr kat. 291430',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/334032_291430_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-pod-oczy/AA-Technologia-Wieku-5-Repair-60-Zlota-Kuracja-krem-pod-oczy-napinajaco-odzywczy-15-ml,291430,9224',
+ 'Name': 'AA Technologia Wieku 5 Repair 60+ Złota Kuracja',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '16.49',
+ 'Rate': 'None',
+ 'RegularPrice': '21.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-60-kompleksowy-krem-modelujacy-na-dzien-i-na-noc-twarz-szyja-dekolt-50,239014,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'kompleksowy krem modelujący na dzień i na noc twarz, szyja, '
+                'dekolt50ml, nr kat. 239014',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/56222_239014_1280_720_4586.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-60-kompleksowy-krem-modelujacy-na-dzien-i-na-noc-twarz-szyja-dekolt-50,239014,9223',
+ 'Name': "L'ORÉAL PARIS Ekspert Wieku 60+",
+ 'NumberOfReviews': '5',
+ 'PromoPrice': '26.99',
+ 'Rate': 5.0,
+ 'RegularPrice': '34.99'}
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Maseczki/LOreal-Paris-Hyaluron-Specialist-krem-maska-na-noc-wypelniajaca-i-nawilzajaca-50-ml,325592,9226> (referer: https://www.rossmann.pl/promocje?Page=4&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Serum/Lirene-Acid-Power-serum-wygladzajace-do-twarzy-kazdy-rodzaj-cery-30-ml,378805,9225> (referer: https://www.rossmann.pl/promocje?Page=4&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Serum/ME-serum-do-twarzy-z-kwasem-traneksamowym-25-30-ml,370199,9225> (referer: https://www.rossmann.pl/promocje?Page=4&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-pod-oczy/AA-Technologia-Wieku-5-Repair-50-Aktywny-Lifting-rewitalizujacy-krem-rozswietlajacy-pod-oczy-15-ml,381297,9224>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy pod oczy',
+ 'Description': 'rewitalizujący krem rozświetlający pod oczy15 ml, nr kat. '
+                '381297',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/322648_381297_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-pod-oczy/AA-Technologia-Wieku-5-Repair-50-Aktywny-Lifting-rewitalizujacy-krem-rozswietlajacy-pod-oczy-15-ml,381297,9224',
+ 'Name': 'AA Technologia Wieku 5 Repair 50+ Aktywny Lifting',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '16.49',
+ 'Rate': 'None',
+ 'RegularPrice': '21.99'}
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Christian-Laurent-Bakuchiol-antygrawitacyjny-krem-lifting-aktywnie-modelujacy-na-dzien-i-na-noc-50-,357731,9223> (referer: https://www.rossmann.pl/promocje?Page=1&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Zele-i-pianki-do-twarzy/LOreal-Paris-Hyaluron-Specialist-skoncentrowany-zel-nawilzajacy-z-kwasem-hialuronowym-50-ml,379183,8690> (referer: https://www.rossmann.pl/promocje?Page=4&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Hyaluron-Specialist-wypelniajacy-krem-nawilzajacy-na-dzien-50-ml,325593,9223> (referer: https://www.rossmann.pl/promocje?Page=4&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-pod-oczy/LOreal-Paris-Hyaluron-Specialist-krem-pod-oczy-wypelniajaca-kuracja-nawilzajaca-15-ml,325591,9224> (referer: https://www.rossmann.pl/promocje?Page=4&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Eveline-Cosmetics-Royal-Snail-skoncentrowany-krem-aktywnie-regenerujacy-na-dzien-i-na-noc-cera-dojr,297439,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'skoncentrowany krem aktywnie regenerujący na dzień i na noc, '
+                'cera dojrzała, 70+50 ml, nr kat. 297439',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/305435_297439_1280_720_100163.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Eveline-Cosmetics-Royal-Snail-skoncentrowany-krem-aktywnie-regenerujacy-na-dzien-i-na-noc-cera-dojr,297439,9223',
+ 'Name': 'EVELINE COSMETICS Royal Snail',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '17.99',
+ 'Rate': 'None',
+ 'RegularPrice': '29.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Eveline-Cosmetics-Royal-Snail-skoncentrowany-krem-ultranaprawczy-na-dzien-i-na-noc-cera-dojrzala-60,297438,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'skoncentrowany krem ultranaprawczy na dzień i na noc, cera '
+                'dojrzała, 60+50 ml, nr kat. 297438',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/305433_297438_1280_720_100163.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Eveline-Cosmetics-Royal-Snail-skoncentrowany-krem-ultranaprawczy-na-dzien-i-na-noc-cera-dojrzala-60,297438,9223',
+ 'Name': 'EVELINE COSMETICS Royal Snail',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '17.99',
+ 'Rate': 'None',
+ 'RegularPrice': '29.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Eveline-Cosmetics-Royal-Snail-skoncentrowany-krem-silnie-liftingujacy-na-dzien-i-na-noc-cera-dojrza,297435,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'skoncentrowany krem silnie liftingujący na dzień i na noc, '
+                'cera dojrzała, 50+50 ml, nr kat. 297435',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/305431_297435_1280_720_100163.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Eveline-Cosmetics-Royal-Snail-skoncentrowany-krem-silnie-liftingujacy-na-dzien-i-na-noc-cera-dojrza,297435,9223',
+ 'Name': 'EVELINE COSMETICS Royal Snail',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '17.99',
+ 'Rate': 'None',
+ 'RegularPrice': '29.99'}
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Perfecta-Fenomen-C-nawilzajacy-krem-liftingujacy-na-dzien-i-na-noc-50-SPF-6-50-ml,248613,9223> (referer: https://www.rossmann.pl/promocje?Page=2&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Tolpa-pre-age-krem-na-noc-regenerujaco-wygladzajacy-50-ml,395578,9223> (referer: https://www.rossmann.pl/promocje?Page=4&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Serum/Tolpa-pre-age-nawilzajace-serum-rozswietlajace-do-twarzy-20-ml,395576,9225> (referer: https://www.rossmann.pl/promocje?Page=4&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Bielenda-Zlote-Ceramidy-przeciwzmarszczkowy-krem-ultra-naprawczy-na-dzien-i-na-noc-70-50-ml,378767,9223> (referer: https://www.rossmann.pl/promocje?Page=4&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Tolpa-pre-age-krem-na-dzien-nawilzajaco-wygladzajacy-50-ml,395577,9223> (referer: https://www.rossmann.pl/promocje?Page=4&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-pod-oczy/Eveline-Cosmetics-Royal-Snail-skoncentrowany-krem-pod-oczy-i-na-powieki-intensywnie-liftingujacy-na,297443,9224>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy pod oczy',
+ 'Description': 'skoncentrowany krem pod oczy i na powieki intensywnie '
+                'liftingujący, na dzień i na noc, 50+/70+20 ml, nr kat. 297443',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/305439_297443_1280_720_100163.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-pod-oczy/Eveline-Cosmetics-Royal-Snail-skoncentrowany-krem-pod-oczy-i-na-powieki-intensywnie-liftingujacy-na,297443,9224',
+ 'Name': 'EVELINE COSMETICS Royal Snail',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '16.99',
+ 'Rate': 'None',
+ 'RegularPrice': '26.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-70-przeciwzmarszczkowy-krem-odzywczy-na-noc-50-ml,258640,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'przeciwzmarszczkowy krem odżywczy na noc50 ml, nr kat. 258640',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/82186_258640_1280_720_23976.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-70-przeciwzmarszczkowy-krem-odzywczy-na-noc-50-ml,258640,9223',
+ 'Name': "L'ORÉAL PARIS Ekspert Wieku 70+",
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '16.99',
+ 'Rate': 'None',
+ 'RegularPrice': '29.99'}
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Bielenda-Zlote-Ceramidy-przeciwzmarszczkowy-krem-gleboko-odbudowujacy-na-dzien-i-na-noc-60-50-ml,378766,9223> (referer: https://www.rossmann.pl/promocje?Page=4&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-70-przeciwzmarszczkowy-krem-odzywczy-na-dzien-50-ml,258637,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'przeciwzmarszczkowy krem odżywczy na dzień50 ml, nr kat. '
+                '258637',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/187791_258637_1280_720_56393.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Ekspert-Wieku-70-przeciwzmarszczkowy-krem-odzywczy-na-dzien-50-ml,258637,9223',
+ 'Name': "L'ORÉAL PARIS Ekspert Wieku 70+",
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '16.99',
+ 'Rate': 'None',
+ 'RegularPrice': '29.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Maseczki/LOreal-Paris-Hyaluron-Specialist-krem-maska-na-noc-wypelniajaca-i-nawilzajaca-50-ml,325592,9226>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Maseczki',
+ 'Description': 'krem maska na noc, wypełniająca i nawilżająca50 ml, nr kat. '
+                '325592',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/337954_325592_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Maseczki/LOreal-Paris-Hyaluron-Specialist-krem-maska-na-noc-wypelniajaca-i-nawilzajaca-50-ml,325592,9226',
+ 'Name': "L'ORÉAL PARIS Hyaluron Specialist",
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '23.99',
+ 'Rate': 'None',
+ 'RegularPrice': '31.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Serum/Lirene-Acid-Power-serum-wygladzajace-do-twarzy-kazdy-rodzaj-cery-30-ml,378805,9225>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Serum',
+ 'Description': 'serum wygładzające do twarzy każdy rodzaj cery30 ml, nr kat. '
+                '378805',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/331612_378805_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Serum/Lirene-Acid-Power-serum-wygladzajace-do-twarzy-kazdy-rodzaj-cery-30-ml,378805,9225',
+ 'Name': 'LIRENE Acid Power',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '19.99',
+ 'Rate': 'None',
+ 'RegularPrice': '26.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Serum/ME-serum-do-twarzy-z-kwasem-traneksamowym-25-30-ml,370199,9225>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Serum',
+ 'Description': 'serum do twarzy z kwasem traneksamowym 2,5%30 ml, nr kat. '
+                '370199',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/318513_370199_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Serum/ME-serum-do-twarzy-z-kwasem-traneksamowym-25-30-ml,370199,9225',
+ 'Name': 'ME+',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '22.49',
+ 'Rate': 'None',
+ 'RegularPrice': '31.99'}
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Eveline-Cosmetics-bioManuka-Lift-liftingujacy-krem-kuracja-modelujacy-owal-twarzy-na-dzien-i-na-noc,319019,9223> (referer: https://www.rossmann.pl/promocje?Page=4&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Bielenda-Zlote-Ceramidy-przeciwzmarszczkowy-krem-liftingujaco-regenerujacy-na-dzien-i-na-noc-50-50,378765,9223> (referer: https://www.rossmann.pl/promocje?Page=4&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Christian-Laurent-Bakuchiol-antygrawitacyjny-krem-lifting-aktywnie-modelujacy-na-dzien-i-na-noc-50-,357731,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'antygrawitacyjny krem-lifting aktywnie modelujący, na dzień i '
+                'na noc, 50+50 ml, nr kat. 357731',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/273645_357731_1280_720_89242.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Christian-Laurent-Bakuchiol-antygrawitacyjny-krem-lifting-aktywnie-modelujacy-na-dzien-i-na-noc-50-,357731,9223',
+ 'Name': 'CHRISTIAN LAURENT Bakuchiol',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '28.99',
+ 'Rate': 'None',
+ 'RegularPrice': '45.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Zele-i-pianki-do-twarzy/LOreal-Paris-Hyaluron-Specialist-skoncentrowany-zel-nawilzajacy-z-kwasem-hialuronowym-50-ml,379183,8690>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Oczyszczanie i demakijaż/Żele i pianki do twarzy',
+ 'Description': 'skoncentrowany żel nawilżający z kwasem hialuronowym50 ml, nr '
+                'kat. 379183',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/337961_379183_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Zele-i-pianki-do-twarzy/LOreal-Paris-Hyaluron-Specialist-skoncentrowany-zel-nawilzajacy-z-kwasem-hialuronowym-50-ml,379183,8690',
+ 'Name': "L'ORÉAL PARIS Hyaluron Specialist",
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '25.49',
+ 'Rate': 'None',
+ 'RegularPrice': '35.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Hyaluron-Specialist-wypelniajacy-krem-nawilzajacy-na-dzien-50-ml,325593,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'wypełniający krem nawilżający na dzień50 ml, nr kat. 325593',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/337955_325593_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/LOreal-Paris-Hyaluron-Specialist-wypelniajacy-krem-nawilzajacy-na-dzien-50-ml,325593,9223',
+ 'Name': "L'ORÉAL PARIS Hyaluron Specialist",
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '23.99',
+ 'Rate': 'None',
+ 'RegularPrice': '31.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-pod-oczy/LOreal-Paris-Hyaluron-Specialist-krem-pod-oczy-wypelniajaca-kuracja-nawilzajaca-15-ml,325591,9224>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy pod oczy',
+ 'Description': 'krem pod oczy, wypełniająca kuracja nawilżająca15 ml, nr kat. '
+                '325591',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/337953_325591_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-pod-oczy/LOreal-Paris-Hyaluron-Specialist-krem-pod-oczy-wypelniajaca-kuracja-nawilzajaca-15-ml,325591,9224',
+ 'Name': "L'ORÉAL PARIS Hyaluron Specialist",
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '23.99',
+ 'Rate': 'None',
+ 'RegularPrice': '31.99'}
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Im-NATURIKKE-krem-na-noc-bakuchiol-skwalan-50-ml,381396,9223> (referer: https://www.rossmann.pl/promocje?Page=4&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Eveline-Cosmetics-bioManuka-Lift-ujedrniajacy-krem-kuracja-redukujacy-zmarszczki-na-dzien-i-na-noc-,319016,9223> (referer: https://www.rossmann.pl/promocje?Page=4&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-pod-oczy/Eveline-Cosmetics-bioManuka-Lift-odzywczo-wygladzajacy-krem-kuracja-pod-oczy-i-na-powieki-50-70-20,319027,9224> (referer: https://www.rossmann.pl/promocje?Page=4&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Perfecta-Fenomen-C-nawilzajacy-krem-liftingujacy-na-dzien-i-na-noc-50-SPF-6-50-ml,248613,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'nawilżający krem liftingujący na dzień i na noc, 50+, SPF 650 '
+                'ml, nr kat. 248613',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/319338_248613_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Perfecta-Fenomen-C-nawilzajacy-krem-liftingujacy-na-dzien-i-na-noc-50-SPF-6-50-ml,248613,9223',
+ 'Name': 'PERFECTA Fenomen C',
+ 'NumberOfReviews': '5',
+ 'PromoPrice': '21.99',
+ 'Rate': 3.5,
+ 'RegularPrice': '29.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Tolpa-pre-age-krem-na-noc-regenerujaco-wygladzajacy-50-ml,395578,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'krem na noc regenerująco-wygładzający50 ml, nr kat. 395578',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/350332_395578_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Tolpa-pre-age-krem-na-noc-regenerujaco-wygladzajacy-50-ml,395578,9223',
+ 'Name': 'TOŁPA pre age',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '22.99',
+ 'Rate': 'None',
+ 'RegularPrice': '34.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Serum/Tolpa-pre-age-nawilzajace-serum-rozswietlajace-do-twarzy-20-ml,395576,9225>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Serum',
+ 'Description': 'nawilżające serum rozświetlające do twarzy20 ml, nr kat. '
+                '395576',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/350320_395576_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Serum/Tolpa-pre-age-nawilzajace-serum-rozswietlajace-do-twarzy-20-ml,395576,9225',
+ 'Name': 'TOŁPA pre age',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '22.99',
+ 'Rate': 'None',
+ 'RegularPrice': '34.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Bielenda-Zlote-Ceramidy-przeciwzmarszczkowy-krem-ultra-naprawczy-na-dzien-i-na-noc-70-50-ml,378767,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'przeciwzmarszczkowy krem ultra naprawczy na dzień i na noc, '
+                '70+50 ml, nr kat. 378767',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/321864_378767_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Bielenda-Zlote-Ceramidy-przeciwzmarszczkowy-krem-ultra-naprawczy-na-dzien-i-na-noc-70-50-ml,378767,9223',
+ 'Name': 'BIELENDA Złote Ceramidy',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '19.99',
+ 'Rate': 'None',
+ 'RegularPrice': '27.49'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Tolpa-pre-age-krem-na-dzien-nawilzajaco-wygladzajacy-50-ml,395577,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'krem na dzień nawilżająco-wygładzający50 ml, nr kat. 395577',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/350328_395577_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Tolpa-pre-age-krem-na-dzien-nawilzajaco-wygladzajacy-50-ml,395577,9223',
+ 'Name': 'TOŁPA pre age',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '22.99',
+ 'Rate': 'None',
+ 'RegularPrice': '34.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Bielenda-Zlote-Ceramidy-przeciwzmarszczkowy-krem-gleboko-odbudowujacy-na-dzien-i-na-noc-60-50-ml,378766,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'przeciwzmarszczkowy krem głęboko odbudowujący na dzień i na '
+                'noc, 60+50 ml, nr kat. 378766',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/321859_378766_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Bielenda-Zlote-Ceramidy-przeciwzmarszczkowy-krem-gleboko-odbudowujacy-na-dzien-i-na-noc-60-50-ml,378766,9223',
+ 'Name': 'BIELENDA Złote Ceramidy',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '19.99',
+ 'Rate': 'None',
+ 'RegularPrice': '27.49'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Eveline-Cosmetics-bioManuka-Lift-liftingujacy-krem-kuracja-modelujacy-owal-twarzy-na-dzien-i-na-noc,319019,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'liftingujący krem-kuracja modelujący owal twarzy na dzień i '
+                'na noc, 60+50 ml, nr kat. 319019',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/311654_319019_1280_720_102275.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Eveline-Cosmetics-bioManuka-Lift-liftingujacy-krem-kuracja-modelujacy-owal-twarzy-na-dzien-i-na-noc,319019,9223',
+ 'Name': 'EVELINE COSMETICS bioManuka Lift',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '15.99',
+ 'Rate': 'None',
+ 'RegularPrice': '25.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Bielenda-Zlote-Ceramidy-przeciwzmarszczkowy-krem-liftingujaco-regenerujacy-na-dzien-i-na-noc-50-50,378765,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'przeciwzmarszczkowy krem liftingująco-regenerujący na dzień i '
+                'na noc, 50+50 ml, nr kat. 378765',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/321854_378765_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Bielenda-Zlote-Ceramidy-przeciwzmarszczkowy-krem-liftingujaco-regenerujacy-na-dzien-i-na-noc-50-50,378765,9223',
+ 'Name': 'BIELENDA Złote Ceramidy',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '19.99',
+ 'Rate': 'None',
+ 'RegularPrice': '27.49'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Im-NATURIKKE-krem-na-noc-bakuchiol-skwalan-50-ml,381396,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'krem na noc bakuchiol + skwalan50 ml, nr kat. 381396',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/328771_381396_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Im-NATURIKKE-krem-na-noc-bakuchiol-skwalan-50-ml,381396,9223',
+ 'Name': "I'M NATURIKKE",
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '21.49',
+ 'Rate': 'None',
+ 'RegularPrice': '29.99'}
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Im-NATURIKKE-krem-na-dzien-50-ml,381452,9223> (referer: https://www.rossmann.pl/promocje?Page=4&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Christian-Laurent-Bakuchiol-przeciwzmarszczkowy-krem-lifting-silnie-ujedrniajacy-na-dzien-i-na-noc-,357730,9223> (referer: https://www.rossmann.pl/promocje?Page=4&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/beBIO-Ewa-Chodakowska-naturalny-krem-do-twarzy-50-ujedrniajacy-na-noc-50-ml,382368,9223> (referer: https://www.rossmann.pl/promocje?Page=5&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Im-NATURIKKE-krem-na-noc-50-ml,381453,9223> (referer: https://www.rossmann.pl/promocje?Page=4&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Eveline-Cosmetics-bioManuka-Lift-ujedrniajacy-krem-kuracja-redukujacy-zmarszczki-na-dzien-i-na-noc-,319016,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'ujędrniający krem-kuracja redukujący zmarszczki na dzień i na '
+                'noc, 50+50 ml, nr kat. 319016',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/311650_319016_1280_720_102275.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Eveline-Cosmetics-bioManuka-Lift-ujedrniajacy-krem-kuracja-redukujacy-zmarszczki-na-dzien-i-na-noc-,319016,9223',
+ 'Name': 'EVELINE COSMETICS bioManuka Lift',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '15.99',
+ 'Rate': 'None',
+ 'RegularPrice': '25.99'}
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Perfecta-Neo-Elixir-Mlodosci-krem-przeciwzmarszczkowy-na-dzien-i-na-noc-70-50-ml,369990,9223> (referer: https://www.rossmann.pl/promocje?Page=4&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-pod-oczy/Im-NATURIKKE-kojacy-krem-pod-oczy-15-ml,381395,9224> (referer: https://www.rossmann.pl/promocje?Page=4&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-pod-oczy/Eveline-Cosmetics-bioManuka-Lift-odzywczo-wygladzajacy-krem-kuracja-pod-oczy-i-na-powieki-50-70-20,319027,9224>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy pod oczy',
+ 'Description': 'odżywczo-wygładzający krem-kuracja pod oczy i na powieki, '
+                '50-70+20 ml, nr kat. 319027',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/201252_319027_1280_720_102275.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-pod-oczy/Eveline-Cosmetics-bioManuka-Lift-odzywczo-wygladzajacy-krem-kuracja-pod-oczy-i-na-powieki-50-70-20,319027,9224',
+ 'Name': 'EVELINE COSMETICS bioManuka Lift',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '14.99',
+ 'Rate': 'None',
+ 'RegularPrice': '22.99'}
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Im-NATURIKKE-krem-na-dzien-bakuchiol-skwalan-50-ml,381397,9223> (referer: https://www.rossmann.pl/promocje?Page=4&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Serum/ME-serum-do-twarzy-niacynamid-10-i-cynk-15-30-ml,370197,9225> (referer: https://www.rossmann.pl/promocje?Page=5&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-pod-oczy/Bielenda-Royal-Bee-Elixir-silnie-ujedrniajacy-krem-przeciwzmarszczkowy-pod-oczy-15-ml,372614,9224> (referer: https://www.rossmann.pl/promocje?Page=5&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Serum/ME-serum-do-twarzy-z-kwasem-hialuronowym-2-30-ml,370191,9225> (referer: https://www.rossmann.pl/promocje?Page=5&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Serum/Lirene-Acid-Power-serum-zluszczajace-z-hydrolatem-grejpfrutowym-ceraz-przebarwieniami-i-tradzikowa-,381435,9225> (referer: https://www.rossmann.pl/promocje?Page=5&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Lirene-Acid-Power-nawilzajacy-krem-wygladzajacy-na-dzien-i-na-noc-cera-sucha-i-naczynkowa-z-hydrol,378793,9223> (referer: https://www.rossmann.pl/promocje?Page=5&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Serum/ME-serum-do-twarzy-z-kwasem-poliglutaminowym-1-30-ml,370201,9225> (referer: https://www.rossmann.pl/promocje?Page=5&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Serum/ME-serum-do-twarzy-SPF-30-30-ml,370204,9225> (referer: https://www.rossmann.pl/promocje?Page=5&PageSize=24)
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Im-NATURIKKE-krem-na-dzien-50-ml,381452,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'krem na dzień 50 ml, nr kat. 381452',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/328789_381452_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Im-NATURIKKE-krem-na-dzien-50-ml,381452,9223',
+ 'Name': "I'M NATURIKKE",
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '21.49',
+ 'Rate': 'None',
+ 'RegularPrice': '29.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Christian-Laurent-Bakuchiol-przeciwzmarszczkowy-krem-lifting-silnie-ujedrniajacy-na-dzien-i-na-noc-,357730,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'przeciwzmarszczkowy krem-lifting silnie ujędrniający, na '
+                'dzień i na noc, 40+50 ml, nr kat. 357730',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/273637_357730_1280_720_89242.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Christian-Laurent-Bakuchiol-przeciwzmarszczkowy-krem-lifting-silnie-ujedrniajacy-na-dzien-i-na-noc-,357730,9223',
+ 'Name': 'CHRISTIAN LAURENT Bakuchiol',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '28.99',
+ 'Rate': 'None',
+ 'RegularPrice': '45.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/beBIO-Ewa-Chodakowska-naturalny-krem-do-twarzy-50-ujedrniajacy-na-noc-50-ml,382368,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'naturalny krem do twarzy 50+ ujędrniający na noc50 ml, nr '
+                'kat. 382368',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/319988_382368_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/beBIO-Ewa-Chodakowska-naturalny-krem-do-twarzy-50-ujedrniajacy-na-noc-50-ml,382368,9223',
+ 'Name': 'BEBIO Ewa Chodakowska',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '18.99',
+ 'Rate': 'None',
+ 'RegularPrice': '25.49'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Im-NATURIKKE-krem-na-noc-50-ml,381453,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'krem na noc 50 ml, nr kat. 381453',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/328798_381453_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Im-NATURIKKE-krem-na-noc-50-ml,381453,9223',
+ 'Name': "I'M NATURIKKE",
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '21.49',
+ 'Rate': 'None',
+ 'RegularPrice': '29.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Perfecta-Neo-Elixir-Mlodosci-krem-przeciwzmarszczkowy-na-dzien-i-na-noc-70-50-ml,369990,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'krem przeciwzmarszczkowy na dzień i na noc, 70+50 ml, nr kat. '
+                '369990',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/314360_369990_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Perfecta-Neo-Elixir-Mlodosci-krem-przeciwzmarszczkowy-na-dzien-i-na-noc-70-50-ml,369990,9223',
+ 'Name': 'PERFECTA Neo-Elixir Młodości',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '24.99',
+ 'Rate': 'None',
+ 'RegularPrice': '33.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-pod-oczy/Im-NATURIKKE-kojacy-krem-pod-oczy-15-ml,381395,9224>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy pod oczy',
+ 'Description': 'kojący krem pod oczy15 ml, nr kat. 381395',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/328780_381395_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-pod-oczy/Im-NATURIKKE-kojacy-krem-pod-oczy-15-ml,381395,9224',
+ 'Name': "I'M NATURIKKE",
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '17.99',
+ 'Rate': 'None',
+ 'RegularPrice': '24.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Im-NATURIKKE-krem-na-dzien-bakuchiol-skwalan-50-ml,381397,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'krem na dzień bakuchiol + skwalan50 ml, nr kat. 381397',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/328762_381397_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Im-NATURIKKE-krem-na-dzien-bakuchiol-skwalan-50-ml,381397,9223',
+ 'Name': "I'M NATURIKKE",
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '21.49',
+ 'Rate': 'None',
+ 'RegularPrice': '29.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Serum/ME-serum-do-twarzy-niacynamid-10-i-cynk-15-30-ml,370197,9225>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Serum',
+ 'Description': 'serum do twarzy, niacynamid 10% i cynk 1,5%30 ml, nr kat. '
+                '370197',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/318511_370197_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Serum/ME-serum-do-twarzy-niacynamid-10-i-cynk-15-30-ml,370197,9225',
+ 'Name': 'ME+',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '19.99',
+ 'Rate': 'None',
+ 'RegularPrice': '27.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-pod-oczy/Bielenda-Royal-Bee-Elixir-silnie-ujedrniajacy-krem-przeciwzmarszczkowy-pod-oczy-15-ml,372614,9224>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy pod oczy',
+ 'Description': 'silnie ujędrniający krem przeciwzmarszczkowy pod oczy15 ml, '
+                'nr kat. 372614',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/311179_372614_1280_720_102131.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-pod-oczy/Bielenda-Royal-Bee-Elixir-silnie-ujedrniajacy-krem-przeciwzmarszczkowy-pod-oczy-15-ml,372614,9224',
+ 'Name': 'BIELENDA Royal Bee Elixir',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '14.99',
+ 'Rate': 'None',
+ 'RegularPrice': '20.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Serum/ME-serum-do-twarzy-z-kwasem-hialuronowym-2-30-ml,370191,9225>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Serum',
+ 'Description': 'serum do twarzy z kwasem hialuronowym 2%30 ml, nr kat. 370191',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/318510_370191_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Serum/ME-serum-do-twarzy-z-kwasem-hialuronowym-2-30-ml,370191,9225',
+ 'Name': 'ME+',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '19.99',
+ 'Rate': 'None',
+ 'RegularPrice': '27.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Serum/Lirene-Acid-Power-serum-zluszczajace-z-hydrolatem-grejpfrutowym-ceraz-przebarwieniami-i-tradzikowa-,381435,9225>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Serum',
+ 'Description': 'serum złuszczające z hydrolatem grejpfrutowym ceraz '
+                'przebarwieniami i trądzikowa30 ml, nr kat. 381435',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/331611_381435_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Serum/Lirene-Acid-Power-serum-zluszczajace-z-hydrolatem-grejpfrutowym-ceraz-przebarwieniami-i-tradzikowa-,381435,9225',
+ 'Name': 'LIRENE Acid Power',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '19.99',
+ 'Rate': 'None',
+ 'RegularPrice': '26.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Lirene-Acid-Power-nawilzajacy-krem-wygladzajacy-na-dzien-i-na-noc-cera-sucha-i-naczynkowa-z-hydrol,378793,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'nawilżający krem wygładzający na dzień i na noc cera sucha i '
+                'naczynkowa, z hydrolatem z bławatka50 ml, nr kat. 378793',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/331609_378793_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Lirene-Acid-Power-nawilzajacy-krem-wygladzajacy-na-dzien-i-na-noc-cera-sucha-i-naczynkowa-z-hydrol,378793,9223',
+ 'Name': 'LIRENE Acid Power',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '19.99',
+ 'Rate': 'None',
+ 'RegularPrice': '26.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Serum/ME-serum-do-twarzy-z-kwasem-poliglutaminowym-1-30-ml,370201,9225>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Serum',
+ 'Description': 'serum do twarzy z kwasem poliglutaminowym 1%30 ml, nr kat. '
+                '370201',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/318512_370201_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Serum/ME-serum-do-twarzy-z-kwasem-poliglutaminowym-1-30-ml,370201,9225',
+ 'Name': 'ME+',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '22.49',
+ 'Rate': 'None',
+ 'RegularPrice': '31.99'}
+2022-05-14 08:07:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Serum/ME-serum-do-twarzy-SPF-30-30-ml,370204,9225>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Serum',
+ 'Description': 'serum do twarzy SPF 3030 ml, nr kat. 370204',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/318514_370204_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Serum/ME-serum-do-twarzy-SPF-30-30-ml,370204,9225',
+ 'Name': 'ME+',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '22.49',
+ 'Rate': 'None',
+ 'RegularPrice': '31.99'}
+2022-05-14 08:07:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Eveline-Cosmetics-bioManuka-Lift-odbudowujacy-krem-kuracja-przywracajacy-gestosc-skory-na-dzien-i-n,319026,9223> (referer: https://www.rossmann.pl/promocje?Page=4&PageSize=24)
+2022-05-14 08:07:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Eveline-Cosmetics-bioManuka-Lift-odbudowujacy-krem-kuracja-przywracajacy-gestosc-skory-na-dzien-i-n,319026,9223>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Kremy do twarzy',
+ 'Description': 'odbudowujący krem-kuracja przywracający gęstość skóry na '
+                'dzień i na noc, 70+50 ml, nr kat. 319026',
+ 'Gender': 'kobieta',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/201248_319026_1280_720_102275.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Kremy-do-twarzy/Eveline-Cosmetics-bioManuka-Lift-odbudowujacy-krem-kuracja-przywracajacy-gestosc-skory-na-dzien-i-n,319026,9223',
+ 'Name': 'EVELINE COSMETICS bioManuka Lift',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '15.99',
+ 'Rate': 'None',
+ 'RegularPrice': '25.99'}
+2022-05-14 08:07:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.rossmann.pl/Produkt/Serum/Lirene-Acid-Power-serum-nawilzajace-z-kwasem-hialuronowym-cera-sucha-i-naczynkowa-hydrolatem-z-blaw,378800,9225> (referer: https://www.rossmann.pl/promocje?Page=5&PageSize=24)
+2022-05-14 08:07:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.rossmann.pl/Produkt/Serum/Lirene-Acid-Power-serum-nawilzajace-z-kwasem-hialuronowym-cera-sucha-i-naczynkowa-hydrolatem-z-blaw,378800,9225>
+{'Availability': 'Available online',
+ 'Categories': 'Twarz/Pielęgnacja twarzy/Serum',
+ 'Description': 'serum nawilżające z kwasem hialuronowym cera sucha i '
+                'naczynkowa, hydrolatem z bławatka30 ml, nr kat. 378800',
+ 'Gender': 'None',
+ 'Image': 'https://www.ros.net.pl/GalleryImages/product_photos/1280_720/331610_378800_1280_720.png',
+ 'Link': 'https://www.rossmann.pl/Produkt/Serum/Lirene-Acid-Power-serum-nawilzajace-z-kwasem-hialuronowym-cera-sucha-i-naczynkowa-hydrolatem-z-blaw,378800,9225',
+ 'Name': 'LIRENE Acid Power',
+ 'NumberOfReviews': 'None',
+ 'PromoPrice': '19.99',
+ 'Rate': 'None',
+ 'RegularPrice': '26.99'}
+2022-05-14 08:07:21 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-05-14 08:07:21 [scrapy.extensions.feedexport] INFO: Stored csv feed (120 items) in: results/results_SCRAPY_120.csv
+2022-05-14 08:07:21 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 49200,
+ 'downloader/request_count': 131,
+ 'downloader/request_method_count/GET': 131,
+ 'downloader/response_bytes': 17762671,
+ 'downloader/response_count': 131,
+ 'downloader/response_status_count/200': 126,
+ 'downloader/response_status_count/302': 5,
+ 'elapsed_time_seconds': 3.726713,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 5, 14, 6, 7, 21, 307698),
+ 'httpcompression/response_bytes': 69244763,
+ 'httpcompression/response_count': 126,
+ 'item_scraped_count': 120,
+ 'log_count/DEBUG': 252,
+ 'log_count/INFO': 11,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 62005248,
+ 'memusage/startup': 62005248,
+ 'request_depth_max': 1,
+ 'response_received_count': 126,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 130,
+ 'scheduler/dequeued/memory': 130,
+ 'scheduler/enqueued': 130,
+ 'scheduler/enqueued/memory': 130,
+ 'start_time': datetime.datetime(2022, 5, 14, 6, 7, 17, 580985)}
+2022-05-14 08:07:21 [scrapy.core.engine] INFO: Spider closed (finished)
