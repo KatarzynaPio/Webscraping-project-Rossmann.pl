@@ -1,0 +1,3 @@
+run here:
+scrapy crawl products -o results_SCRAPY_120.csv --logfile log_SCRAPY_120.txt
+
