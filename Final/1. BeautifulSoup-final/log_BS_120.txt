@@ -1,0 +1,7 @@
+Scraped data are saved: /home/katarzyna/Pulpit/Data Science/II Sem/Web Scraping/Webscraping_project/final/Webscraping_project/1. BeautifulSoup-final/results_BS_120.csv
+Number od scraped products: 120
+Execution time sec: 83.0072
+Execution time min: 1.3835
+Average time of scraping data for one product sec: 0.6246
+Products that have not been scraped:
+None
